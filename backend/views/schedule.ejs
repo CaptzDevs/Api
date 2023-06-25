@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .color-1 {
+        background-color: #FF7070;
+    }
+
+    .color-2 {
+        background-color: #FF9F70;
+    }
+
+    .color-3 {
+        background-color: #FFD570;
+    }
+
+    .color-4 {
+        background-color: #FFFA70;
+    }
+
+    .color-5 {
+        background-color: #C4FF70;
+    }
+
+    .color-6 {
+        background-color: #70FF8A;
+    }
+
+    .color-7 {
+        background-color: #70FFCE;
+    }
+
+    .color-8 {
+        background-color: #70DFFF;
+    }
+
+    .color-9 {
+        background-color: #709EFF;
+    }
+
+    .color-10 {
+        background-color: #9570FF;
+    }
+
+    .color-11 {
+        background-color: #CC70FF;
+    }
+
+    .color-12 {
+        background-color: #FF70F9;
+    }
+
+    .color-13 {
+        background-color: #FF70D5;
+    }
+
+    .color-14 {
+        background-color: #FF709F;
+    }
+
+    .color-15 {
+        background-color: #FF7070;
+    }
+
+    .color-16 {
+        background-color: #FF8F70;
+    }
+
+    .color-17 {
+        background-color: #FFB570;
+    }
+
+    .color-18 {
+        background-color: #FFDD70;
+    }
+
+    .color-19 {
+        background-color: #E0FF70;
+    }
+
+    .color-20 {
+        background-color: #70FF9F;
+    }
+</style>
+
+
+
+
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #505050;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        min-height: 100vh;
+    }
+    main{
+        background: #323232;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-bottom: 50px;
+        gap: 20px;
+    }
+    
+   section.banner{
+        width: 100%;
+        height: 50vh;
+        background: #252525;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+   }
+
+
+
+   a{
+        color: white;
+        text-decoration: none;
+   }
+
+   .schedule{
+    width: 100%;
+    padding: 10px;
+   }
+
+   table.schedule-table{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height:auto;
+        border: 1px solid rgb(121, 121, 121);
+        flex-direction: column;
+        padding: 10px;
+        overflow: auto;
+   }
+
+   tr{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+   }
+
+   th,td{
+        width: 95px;
+        height: 100%;
+        font-size: .5rem;
+        background: #414141;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.095);
+        text-align: center;
+        padding: 20px;
+   }
+   th{
+       font-size: .6rem;
+        padding: 5px;
+   }
+   td:not(:first-child) {
+    color: #070707;
+    padding: 10px;
+
+   }
+   
+   .schedule-selected{
+    border: none;
+   }
+
+   td:hover{
+    background: #6d6d6d;
+    cursor: pointer;
+
+   }
+   .section-subject{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    
+   }
+</style>
+<body>
+
+    <% 
+        // function declare ZONE 
+        function convertToTime(ns = String()) {
+            const h = ns.slice(0, 2);
+            const m = ns.slice(2);
+            const time = `${h}:${m}`;
+
+            return time;
+        }
+
+         let d_en_full = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'] 
+
+    %>
+    <main>
+        <section class="banner">
+            <h1> Captz's API</h1>
+        </section>
+
+    
+        <h1>Schedule</h1>
+        <section class="section-subject">
+            <h2>Subject List</h2>
+            <span>-----</span>
+            <% data.subjectSet.forEach((item,i) => { %>
+                <%= i+1 %>
+                <%= item %>
+                <br>
+                
+            <% }); %>
+        </section>
+        <div class="schedule">
+          
+            <table class="schedule-table">
+                    <thead>
+                    <tr>
+                        <th>  day/time </th>
+
+                        <% for( let i = 900; i <= 2200; i ) { %>
+                            <th data-min_value="<%= i %>" data-max_value="<%= i+50 %>"> 
+                                <%=  convertToTime(('0'+i).slice(-4)) %> -
+                                <%= convertToTime(('0'+(i+50)).slice(-4)) %></th>
+                        <% 
+                        i += 100
+                    } %>
+                    </tr>
+                </thead>
+                <tbody>
+                     <% this_day = data.schedule[0].day 
+                     
+                        let colSpan = -1;
+                        let subjectArr = [data.schedule[0].subjectName]
+                     %>
+
+                     <!-- Loop for 7 day rows -->
+                    <% for( let i = 0; i < 7; i++ ) { let time = 900 %>
+
+                    <tr>
+                     <!-- Loop for time column  -->
+                        <% for( let j = 0; j < 14 ; j++ ) { %>
+                                <% if (j === 0) { %>
+                                    <td ><%= d_en_full[i] %>  </td>
+                                <% } %>
+
+                                    <% 
+                                    let isEmpty = true;
+                               
+                                    
+                                    %>
+                              
+                                    <% data.schedule.forEach((item,index) => {  %>
+
+                                        <% 
+                                            let startTime = +item.startTime.split('.').join('')
+                                            let endTime = +item.endTime.split('.').join('')
+                                        %>
+                                        <!-- check subject time -->
+                                        <% if(i == item.dayNumber && (time >= startTime && time <= endTime)){ %>
+                                            <% 
+
+                                            if(subjectArr.includes(item.subjectName) ){
+                                                colSpan += 1;
+                                            }else{
+                                                subjectArr = [item.subjectName]
+                                                colSpan = 0;
+                                            }
+
+                                            isEmpty = false 
+                                            
+                                            %>
+                                        <td class="schedule-selected color-<%= data.subjectSet.indexOf(item.subjectName)+1 %>"> 
+                                            <%= item.subjectName %>
+                                        </td>
+
+                                  <%   }});  %>
+
+                                 <!-- render Empty subject time -->
+
+                                  <% if(isEmpty){ %>
+                                    <td>
+                                        
+                                    </td>
+                                    <% } %>
+                                  
+                                
+
+                        <% 
+                        time += 100 
+                            } 
+                        %>
+
+                   
+                    </tr>
+                 
+
+                    <% } %>
+              
+
+                </tbody>
+            </table>
+        </div>
+
+
+    
+        <%= data.profile.name  %>
+    
+
+    </main>
+</body>
+</html>

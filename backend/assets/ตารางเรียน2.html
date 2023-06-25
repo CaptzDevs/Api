@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)https://sis-hatyai1.psu.ac.th/Student/StudentClassDate.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><link href="./ตารางเรียน2_files/fmis.css" type="text/css" rel="stylesheet"><link href="./ตารางเรียน2_files/popup.css" type="text/css" rel="stylesheet"><link href="./ตารางเรียน2_files/sis.css" type="text/css" rel="stylesheet"><title>
+	ตารางเรียน
+</title><link rel="stylesheet" href="./ตารางเรียน2_files/popup.css" media="screen"><link rel="stylesheet" href="./ตารางเรียน2_files/fmis.css" media="screen"><link href="./ตารางเรียน2_files/sis.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+        .auto-style1 {
+            width: 10px;
+            height: 10px;
+        }
+
+        .auto-style2 {
+            height: 10px;
+        }
+    </style>
+    
+    
+    <link rel="shortcut icon" type="image/png" href="https://psu1-2.psu.ac.th/Image/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./ตารางเรียน2_files/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ตารางเรียน2_files/font-awesome.min.css">
+    <link href="./ตารางเรียน2_files/font.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./ตารางเรียน2_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ตารางเรียน2_files/bootstrap-datepicker.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://psu1-2.psu.ac.th/Images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://psu1-2.psu.ac.th/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://psu1-2.psu.ac.th/Images/favicon-16x16.png">
+    
+    <link rel="mask-icon" href="https://psu1-2.psu.ac.th/Images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="./ตารางเรียน2_files/jquery-3.5.1.js.download" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    
+    <script src="./ตารางเรียน2_files/popper.min.js.download" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./ตารางเรียน2_files/bootstrap.min.js.download" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- jQuery UI -->
+    <script src="./ตารางเรียน2_files/jquery-ui.js.download" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <script src="./ตารางเรียน2_files/bootstrap-datepicker.js.download" type="text/javascript"></script>
+    <script src="./ตารางเรียน2_files/bootstrap-datepicker-thai.js.download" type="text/javascript"></script>
+    <script src="./ตารางเรียน2_files/bootstrap-datepicker.th.js.download"></script>
+
+    <script src="./ตารางเรียน2_files/moment.js.download"></script>
+    <link href="./ตารางเรียน2_files/fmis.css" type="text/css" rel="stylesheet"><link href="./ตารางเรียน2_files/popup.css" type="text/css" rel="stylesheet"><link href="./ตารางเรียน2_files/sis.css" type="text/css" rel="stylesheet"><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style></head>
+<body>
+    <form name="aspnetForm" method="post" action="https://sis-hatyai1.psu.ac.th/Student/StudentClassDate.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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TDFkZAINDw8WAh8DaGRkAgsPD2QQFgNmAgECAhYDFgQfBwUKNjIxMDIxMDM1Nh8IZBYEHwcFATEfCGQWBB8HBQQyNTY1HwhkFgMCAwIDAgNkAhwPDxYCHwEFCVNJUzIwMTgtMWRkAh0PDxYCHwEFBjAxLjEuMWRkAh4PDxYCHwEFAjEzZGQCJQ8PFgIfAQWEA0NvbnRhY3QgUmVnaXN0cmFyJ3MgRGl2aXNpb24sIFRlbC4gMC03NDI4LTkyNjAtOCBFLU1haWw6IDxhIGhyZWY9bWFpbHRvOnJlZ0Bwc3UuYWMudGg+cmVnQHBzdS5hYy50aDwvYT48YnIgLz48Zm9udCBjb2xvcj0jRDNEM0QzPkNvcHlyaWdodCAmY29weTsgMjAyMyBPZmZpY2Ugb2YgRGlnaXRhbCBJbm5vdmF0aW9uIGFuZCBJbnRlbGxpZ2VudCBTeXN0ZW1zLiBQcmluY2Ugb2YgU29uZ2tsYSBVbml2ZXJzaXR5LiBBbGwgcmlnaHRzIHJlc2VydmVkLiA8YnIgLz5UZWwuIDAtNzQyOC0yMDcyLCAwLTc0MjgtMjEyNCBFLU1haWw6IDxhIGhyZWY9bWFpbHRvOnN1cHBvcnRAcHN1LmFjLnRoPjxmb250IGNvbG9yPSNEM0QzRDM+c3VwcG9ydEBwc3UuYWMudGg8L2ZvbnQ+PC9hPjwvZm9udD5kZBgNBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwNyRNdWx0aVZpZXcxDw9kAgFkBUJjdGwwMCRjdGwwMCRtYWluQ29udGVudCRQYWdlQ29udGVudCRVY0dyaWRWaWV3Q2xhc3NEYXRlMSRHcmlkVmlldzEPPCsADAEIAgFkBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwNiRNdWx0aVZpZXcxDw9kAgFkBRZjdGwwMCRjdGwwMCRMb2dpblZpZXcyDw9kAgFkBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwMyRNdWx0aVZpZXcxDw9kAgFkBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwNCRNdWx0aVZpZXcxDw9kAgFkBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwMiRNdWx0aVZpZXcxDw9kAgFkBRZjdGwwMCRjdGwwMCRMb2dpblZpZXc0Dw9kAgFkBRZjdGwwMCRjdGwwMCRMb2dpblZpZXczDw9kAgFkBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwMSRNdWx0aVZpZXcxDw9kAgFkBRZjdGwwMCRjdGwwMCRMb2dpblZpZXcxDw9kAgFkBShjdGwwMCRjdGwwMCRtYWluQ29udGVudCRjdGwwNSRNdWx0aVZpZXcxDw9kZmQFKGN0bDAwJGN0bDAwJG1haW5Db250ZW50JGN0bDAwJE11bHRpVmlldzEPD2QCAWSA1Gu/t0AIiklG4RV1d3cdQiPGL3Mr0Liyf95nNC9dnw==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./ตารางเรียน2_files/WebResource.axd" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0F2F6A66">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="KYx1lut3MrswGUEwsPd58Mb6OEPidmWCfAO6TmD4s9mR_DXkP8JowI8oHFUXfKGAc2L91aQKLP7qrENT-94wjBfJ4CAvVOp-hAF1765RRmBAn9x-J6Lr_oayJ9JXZzcY0">
+</div>
+        <table cellpadding="0" cellspacing="0" width="100%" style="border-bottom-width: medium; border-bottom-color: white;">
+            <tbody><tr style="background-color: #003C71;">
+                <td style="padding-top: 10px; padding-left: 10px; padding-bottom: 10px;">
+                    <img id="ctl00_ctl00_Img2" src="./ตารางเรียน2_files/logo_sis_cir.png" style="height:76px;width:547px;border-width:0px;">&gt;&nbsp;
+                </td>
+                <td valign="bottom" align="right">
+                    <span style="color: aqua">[</span><span id="ctl00_ctl00_lbCampus" style="color:Aqua;">Hatyai Campus</span><span style="color: aqua">]&nbsp; &nbsp;
+                        <br>
+                    </span>&nbsp;
+                    <a id="ctl00_ctl00_btnSetThai" href="javascript:__doPostBack(&#39;ctl00$ctl00$btnSetThai&#39;,&#39;&#39;)" style="color:White;font-family:Arial;font-size:10pt;">Thai</a>
+                    <span style="color: white">::</span>
+                    <a id="ctl00_ctl00_btnSetEnglish" href="javascript:__doPostBack(&#39;ctl00$ctl00$btnSetEnglish&#39;,&#39;&#39;)" style="color:White;font-family:Arial;font-size:10pt;">English</a>
+                    
+                    &nbsp;&nbsp;<br>
+                    &nbsp;&nbsp;
+                    
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                    <td>
+                                        <img id="ctl00_ctl00_LoginView1_Image1" src="./ตารางเรียน2_files/user_left.jpg" style="border-width:0px;"></td>
+                                    <td style="background-color: #cdcdcd">
+                                        <span id="ctl00_ctl00_LoginView1_LoginName1" style="color:Black;">6210210356 - WATCHARAPORN KAEWSRI</span>
+                                        <a id="ctl00_ctl00_LoginView1_lnkLogOutOld" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$LoginView1$lnkLogOutOld&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../InitSignOut.aspx&quot;, false, true))" style="font-weight:bold;font-style:normal;">Sign Out</a>
+                                    </td>
+                                    <td style="width: 23px" align="left">
+                                        <img id="ctl00_ctl00_LoginView1_Image20" src="./ตารางเรียน2_files/user_right.jpg" style="border-width:0px;"></td>
+                                </tr>
+                            </tbody></table>
+                        
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+            <tbody><tr>
+                <td class="auto-style1">
+                    <img id="ctl00_ctl00_Image2" src="./ตารางเรียน2_files/bg_ot_lf_01.jpg" style="border-width:0px;"></td>
+                <td class="auto-style1">
+                    <img id="ctl00_ctl00_Image1" src="./ตารางเรียน2_files/brd_lf_tp.jpg" style="border-width:0px;"></td>
+                <td style="background-image: url(&#39;../images/brd_md_tp.jpg&#39; );" class="auto-style2">
+                    <img id="ctl00_ctl00_Image5" src="./ตารางเรียน2_files/spacer.gif" style="height:10px;width:10px;border-width:0px;"></td>
+                <td class="auto-style1">
+                    
+                            <img id="ctl00_ctl00_LoginView3_Image3" src="./ตารางเรียน2_files/brd_rt_tp_on.jpg" style="border-width:0px;">
+                        
+                </td>
+                
+                        <td style="width: 10px; height: 10px; background-image: url(&#39;../images/bg_ot_rt_02.jpg&#39;);">
+                            <img id="ctl00_ctl00_LoginView4_Image21" src="./ตารางเรียน2_files/spacer.gif" style="height:1px;width:10px;border-width:0px;"></td>
+                    
+            </tr>
+            <tr>
+                <td style="width: 10px; height: 443px; background-image: url(&#39;../images/bg_ot_lf_02.jpg&#39;);">
+                    <img id="ctl00_ctl00_Image6" src="./ตารางเรียน2_files/spacer.gif" style="height:1px;width:10px;border-width:0px;"></td>
+                <td style="width: 10px; height: 443px; background-image: url(&#39;../images/brd_lf_md03.jpg&#39;);" valign="top">
+                    <img id="ctl00_ctl00_Image7" src="./ตารางเรียน2_files/brd_lf_md02.jpg" style="border-width:0px;"></td>
+                <td style="height: 443px; height: 440px; background: #FFFFFF
+                url(&#39;../images/hm_bg.jpg&#39;) repeat-x;" valign="top">
+                    
+                            <span id="ctl00_ctl00_LoginView2_SiteMapPath1" style="font-family:Tahoma;font-size:8pt;"><a href="https://sis-hatyai1.psu.ac.th/Student/StudentClassDate.aspx#ctl00_ctl00_LoginView2_SiteMapPath1_SkipLink"><img alt="Skip Navigation Links" src="./ตารางเรียน2_files/WebResource(1).axd" width="0" height="0" style="border-width:0px;"></a><span><a title="ระบบสารสนเทศนักศึกษา">Student Information System</a></span><span> &gt; </span><span><a href="https://sis-hatyai1.psu.ac.th/Student/Default.aspx">Student</a></span><span> &gt; </span><span><a>Student Profile</a></span><span> &gt; </span><span>Class Schedule</span><a id="ctl00_ctl00_LoginView2_SiteMapPath1_SkipLink"></a></span>
+                        
+                    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+            <td style="padding:5px;">
+                <img id="ctl00_ctl00_mainContent_ucHeaderStudent1_imgStudLogo" align="absmiddle" src="./ตารางเรียน2_files/user_notebook.png" style="height:44px;width:45px;border-width:0px;">
+
+<img id="ctl00_ctl00_mainContent_ucHeaderStudent1_Image1" align="absmiddle" src="./ตารางเรียน2_files/title_student.gif" style="border-width:0px;">
+
+                
+                
+            </td>
+            <td align="right" valign="bottom">
+                <div id="ctl00_ctl00_mainContent_panTabs">
+	
+                            
+        </div><table border="0" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                            <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl00_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl00_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl00$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentSISInfo.aspx&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">General Info.</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl00_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl01_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl01_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl01$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentProfile.aspx&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">Personal Info.</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl01_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl02_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl02_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl02$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentRegistInfo.aspx&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">Registration Result</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl02_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl03_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl03_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl03$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentGrade.aspx&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">Study Result</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl03_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl04_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl04_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl04$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentGradeThesis.aspx&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">Thesis/Minor Thesis</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl04_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl05_Image1" align="absmiddle" src="./ตารางเรียน2_files/tabsleft.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl05_lbtTabText1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl05$lbtTabText1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentClassDate.aspx&quot;, false, true))" style="color:White;font-weight:bold;text-decoration:none;">Class Schedule</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl05_Image2" align="absmiddle" src="./ตารางเรียน2_files/tabsright.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl06_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl06_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl06$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentExamDate.aspx&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">Examination Schedule</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl06_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><img id="ctl00_ctl00_mainContent_ctl07_Image3" align="absmiddle" src="./ตารางเรียน2_files/tabsleft_i.gif" style="border-width:0px;"></td>
+                    <td style="background-image:url(&#39;..//images/tabsbg_i.gif&#39;)"><a id="ctl00_ctl00_mainContent_ctl07_lbtTabText2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$ctl07$lbtTabText2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;https://fmishatyai.psu.ac.th/studentfmis/&quot;, false, true))" style="color:Black;font-weight:bold;text-decoration:none;">Payment Info</a></td>
+                    <td><img id="ctl00_ctl00_mainContent_ctl07_Image4" align="absmiddle" src="./ตารางเรียน2_files/tabsright_i.gif" style="border-width:0px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    
+
+                    </tr>
+                </tbody></table>
+                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td style="width:15px"><img id="ctl00_ctl00_mainContent_Image1" src="./ตารางเรียน2_files/bar_l_t.gif" style="border-width:0px;"></td>
+                        <td style="background-color:#85bdb1"><img id="ctl00_ctl00_mainContent_Image2" src="./ตารางเรียน2_files/bar_l_t.gif" style="border-width:0px;"></td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+    </tbody></table>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+            <td>
+                
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+            <tbody><tr>
+                <td class="title_content">
+                    <span id="ctl00_ctl00_mainContent_PageContent_Label1">ตารางเรียน</span>
+                    
+<span id="ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_Label1">ภาคการศึกษา/ปีการศึกษา</span>&nbsp;&nbsp;<select name="ctl00$ctl00$mainContent$PageContent$UcTermYearSelector1$ddlTermYear" id="ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear" style="width:84px;">
+	<option value="1/2562">1/2562</option>
+	<option value="2/2562">2/2562</option>
+	<option value="1/2563">1/2563</option>
+	<option value="2/2563">2/2563</option>
+	<option value="3/2563">3/2563</option>
+	<option value="1/2564">1/2564</option>
+	<option value="2/2564">2/2564</option>
+	<option selected="selected" value="1/2565">1/2565</option>
+	<option value="2/2565">2/2565</option>
+
+</select>
+
+                    <input type="submit" name="ctl00$ctl00$mainContent$PageContent$btnShow" value="แสดงตารางเรียน" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$mainContent$PageContent$btnShow&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Student/StudentClassDate.aspx&quot;, false, false))" id="ctl00_ctl00_mainContent_PageContent_btnShow" class="w3-button w3-white w3-border w3-round-medium">
+                    
+                    
+                    </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <span id="ctl00_ctl00_mainContent_PageContent_lbStudentFullName" style="font-size:14pt;font-weight:bold;">6210210356 : วัชราภรณ์  แก้วศรี</span><br>
+        
+        &nbsp;
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+    <tbody><tr>
+        <td class="title_detail">
+<span id="ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_Label2">ตารางเรียน</span>
+<span id="ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_Label1">ภาคการศึกษา : </span>
+<span id="ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_lblTerm">1</span><span id="ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_Label3">/</span><span id="ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_lblYear">2565</span></td>
+    </tr>
+</tbody></table>
+<div>
+	<table cellspacing="0" cellpadding="4" border="0" id="ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_GridView1" style="width:100%;border-collapse:collapse;">
+		<tbody><tr class="table_header" style="font-weight:bold;">
+			<th align="left" scope="col">วันที่เรียน</th><th align="center" scope="col">เวลาเริ่ม</th><th align="center" scope="col">เวลาสิ้นสุด</th><th align="center" scope="col">รหัสวิชา</th><th align="left" scope="col">ชื่อวิชา</th><th align="center" scope="col">หน่วยกิต</th><th align="center" scope="col">ตอน</th><th align="left" scope="col">ผู้สอน</th><th align="left" scope="col">ห้องเรียน</th>
+		</tr><tr>
+			<td align="left">จันทร์</td><td align="center">09.00</td><td align="center">10.20</td><td align="center">332-101</td><td>FUNDAMENTAL PHYSICS</td><td align="center">3</td><td align="center">01</td><td align="left" style="width:30%;">RADCHAGRIT SUPAKULOPAS, KOMRIT WATTANAVATEE, CHITTANON BURANACHAI, WANIDA SUMATHAKULAWAT, SUTTIDA RAKKAPAO, NARAKORN KAEWKHAO, PAPHAVEE VAN DOMMELEN</td><td>NML1</td>
+		</tr><tr style="background-color:#EEEEEE;">
+			<td align="left">จันทร์</td><td align="center">11.00</td><td align="center">11.50</td><td align="center">330-101</td><td>PRINCIPLES OF BIOLOGY I</td><td align="center">3</td><td align="center">01</td><td align="left" style="width:30%;">SINGTOE BOONROTPONG, KWAN NUALCHAROEN, PATAMARERK ENGSONTIA, CHARAN LEERATIWONG, TIDARAT PUANGPAIROTE, DANIA CHEAHA, KRINGPAKA WANGKULANGKUL, JARUWAN MAYAKUN, MATSAPUME  DETCHAROEN, UPATHAM MEESAWAT, CHUTCHAWAN MUENPO, SANSAREEYA WANGKULANGKUL, PIMCHANOK BUAPET, ARIYA DEJTARADOL, RUJINARD SRIWOON</td><td>L1</td>
+		</tr><tr>
+			<td align="left">จันทร์</td><td align="center">13.00</td><td align="center">15.50</td><td align="center">340-213</td><td>METAL PLATING INDUSTRIAL SCI</td><td align="center">2</td><td align="center">01</td><td align="left" style="width:30%;">WARAKORN LIMBUT</td><td>BSc0307</td>
+		</tr><tr style="background-color:#EEEEEE;">
+			<td align="left">อังคาร</td><td align="center">13.00</td><td align="center">15.50</td><td align="center">340-312</td><td>ELECTRO SENSORS FOR ENVIRON</td><td align="center">3</td><td align="center">01</td><td align="left" style="width:30%;">WARAKORN LIMBUT</td><td>BSc0304</td>
+		</tr><tr>
+			<td align="left">อังคาร</td><td align="center">16.00</td><td align="center">17.50</td><td align="center">316-200</td><td>MATERIALS IN DAILY LIFE</td><td align="center">2</td><td align="center">01</td><td align="left" style="width:30%;">PHAIROTE SUNGKHAPHAITOON, PORNSUDA BOMLAI, CHUANPIT KHAOKONG, SUMETHA SUWANBOON</td><td>วท1</td>
+		</tr><tr style="background-color:#EEEEEE;">
+			<td align="left">พุธ</td><td align="center">09.00</td><td align="center">10.20</td><td align="center">332-101</td><td>FUNDAMENTAL PHYSICS</td><td align="center">3</td><td align="center">01</td><td align="left" style="width:30%;">RADCHAGRIT SUPAKULOPAS, KOMRIT WATTANAVATEE, CHITTANON BURANACHAI, WANIDA SUMATHAKULAWAT, SUTTIDA RAKKAPAO, NARAKORN KAEWKHAO, PAPHAVEE VAN DOMMELEN</td><td>NML1</td>
+		</tr><tr>
+			<td align="left">พุธ</td><td align="center">11.00</td><td align="center">11.50</td><td align="center">330-101</td><td>PRINCIPLES OF BIOLOGY I</td><td align="center">3</td><td align="center">01</td><td align="left" style="width:30%;">SINGTOE BOONROTPONG, KWAN NUALCHAROEN, PATAMARERK ENGSONTIA, CHARAN LEERATIWONG, TIDARAT PUANGPAIROTE, DANIA CHEAHA, KRINGPAKA WANGKULANGKUL, JARUWAN MAYAKUN, MATSAPUME  DETCHAROEN, UPATHAM MEESAWAT, CHUTCHAWAN MUENPO, SANSAREEYA WANGKULANGKUL, PIMCHANOK BUAPET, ARIYA DEJTARADOL, RUJINARD SRIWOON</td><td>L1</td>
+		</tr><tr style="background-color:#EEEEEE;">
+			<td align="left">พุธ</td><td align="center">15.00</td><td align="center">16.50</td><td align="center">890-032</td><td>ENGLISH FOR TRAVELERS</td><td align="center">2</td><td align="center">02</td><td align="left" style="width:30%;">NARATIP JINDAPITAK</td><td>ONLINE</td>
+		</tr><tr>
+			<td align="left">พฤหัส</td><td align="center">09.00</td><td align="center">10.50</td><td align="center">340-331</td><td>INTRO TO PHYTOCHEMICALS</td><td align="center">2</td><td align="center">01</td><td align="left" style="width:30%;">KRUEAWAN YOONRAM</td><td>BSc0305</td>
+		</tr><tr style="background-color:#EEEEEE;">
+			<td align="left">ศุกร์</td><td align="center">11.00</td><td align="center">11.50</td><td align="center">330-101</td><td>PRINCIPLES OF BIOLOGY I</td><td align="center">3</td><td align="center">01</td><td align="left" style="width:30%;">SINGTOE BOONROTPONG, KWAN NUALCHAROEN, PATAMARERK ENGSONTIA, CHARAN LEERATIWONG, TIDARAT PUANGPAIROTE, DANIA CHEAHA, KRINGPAKA WANGKULANGKUL, JARUWAN MAYAKUN, MATSAPUME  DETCHAROEN, UPATHAM MEESAWAT, CHUTCHAWAN MUENPO, SANSAREEYA WANGKULANGKUL, PIMCHANOK BUAPET, ARIYA DEJTARADOL, RUJINARD SRIWOON</td><td>L1</td>
+		</tr><tr>
+			<td align="left">ศุกร์</td><td align="center">13.00</td><td align="center">14.50</td><td align="center">340-253</td><td>EVERYDAY SCIENCE</td><td align="center">2</td><td align="center">02</td><td align="left" style="width:30%;">KRUEAWAN YOONRAM, ADUL THIANGCHANYA, TERDTOON DUMRONGRITTAMATT</td><td>NML1</td>
+		</tr><tr style="background-color:#EEEEEE;">
+			<td align="left">ศุกร์</td><td align="center">16.00</td><td align="center">17.50</td><td align="center">340-351</td><td>INTRO TO CRIME DETECTION</td><td align="center">2</td><td align="center">01</td><td align="left" style="width:30%;">TERDTOON DUMRONGRITTAMATT, KRUEAWAN YOONRAM</td><td>NML1</td>
+		</tr>
+	</tbody></table>
+</div>
+
+
+    </div>
+
+    </td> </tr> </tbody></table>
+
+                </td>
+                <td style="width: 10px; height: 443px; background-image: url(&#39;../images/brd_rt_md03.jpg&#39;);" valign="top">
+                    <img id="ctl00_ctl00_Image9" src="./ตารางเรียน2_files/brd_rt_md02.jpg" style="border-width:0px;"></td>
+                <td style="height: 443px; background-image: url(&#39;../images/bg_ot_rt_02.jpg&#39;);">
+                    <img id="ctl00_ctl00_Image10" src="./ตารางเรียน2_files/spacer.gif" style="height:1px;width:10px;border-width:0px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 10px; height: 10px">
+                    <img id="ctl00_ctl00_Image8" src="./ตารางเรียน2_files/bg_ot_lf_03.jpg" style="border-width:0px;"></td>
+                <td style="width: 10px; height: 10px">
+                    <img id="ctl00_ctl00_Image11" src="./ตารางเรียน2_files/brd_lf_bt.jpg" style="border-width:0px;"></td>
+                <td style="height: 10px; background-image: url(&#39;../images/brd_md_bt.jpg&#39;);">
+                    <img id="ctl00_ctl00_Image12" src="./ตารางเรียน2_files/spacer.gif" style="height:10px;width:10px;border-width:0px;"></td>
+                <td style="width: 10px; height: 10px">
+                    <img id="ctl00_ctl00_Image13" src="./ตารางเรียน2_files/brd_rt_bt.jpg" style="border-width:0px;"></td>
+                <td style="height: 10px">
+                    <img id="ctl00_ctl00_Image14" src="./ตารางเรียน2_files/bg_ot_rt_03.jpg" style="border-width:0px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 10px;">
+                    <img id="ctl00_ctl00_Image15" src="./ตารางเรียน2_files/spacer.gif" style="border-width:0px;"></td>
+                <td style="width: 10px;">
+                    <img id="ctl00_ctl00_Image16" src="./ตารางเรียน2_files/bg_ot_bt_01.jpg" style="border-width:0px;"></td>
+                <td style="background-image: url(&#39;../images/bg_ot_bt_02.jpg&#39;);">
+                    <img id="ctl00_ctl00_Image17" src="./ตารางเรียน2_files/spacer.gif" style="height:10px;width:10px;border-width:0px;"></td>
+                <td style="width: 10px;">
+                    <img id="ctl00_ctl00_Image18" src="./ตารางเรียน2_files/bg_ot_bt_03.jpg" style="border-width:0px;"></td>
+                <td>
+                    <img id="ctl00_ctl00_Image19" src="./ตารางเรียน2_files/spacer.gif" style="height:10px;width:1px;border-width:0px;"></td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table width="100%">
+            <tbody><tr>
+                <td colspan="3" style="text-align: center">
+                    <span style="font-size: 9pt">
+                        <span style="font-size: 8pt; color: gray">
+                            
+                            
+                            <span style="font-size: 7pt">[</span>
+                        </span>
+                        <span id="ctl00_ctl00_lbMachineName" style="color:Gray;font-family:Arial;font-size:7pt;">SIS2018-1</span>
+                        <span style="font-size: 7pt">- </span>
+                        <span id="ctl00_ctl00_lbSoftwareVersion" style="color:Gray;font-family:Arial;font-size:7pt;">01.1.1</span>
+                        <span style="font-size: 7pt">- </span>
+                        <span id="ctl00_ctl00_lbCurrentUsers" style="color:Gray;font-family:Arial;font-size:7pt;">13</span>
+                        <span style="color: gray">
+                            <span style="font-size: 7pt">
+                                <span>]</span>
+                            </span>
+                        </span>
+                        
+                        
+                        <input type="hidden" name="ctl00$ctl00$hidCurrentDateTime" id="ctl00_ctl00_hidCurrentDateTime" value="06/22/2023 00:00:00">
+                        <br>
+                        <span style="font-size: 8pt">&nbsp; คู่มือการใช้งาน SIS : [</span></span><a id="ctl00_ctl00_HyperLink2" href="https://sis-hatyai1.psu.ac.th/Manual/SISStudentManual.pdf" target="_blank">นักศึกษา</a><span style="font-size: 8pt">] [</span><a id="ctl00_ctl00_HyperLink3" href="https://sis-hatyai1.psu.ac.th/Manual/SISLecturerManual.pdf" target="_blank">อาจารย์</a><span style="font-size: 8pt">] [</span><a id="ctl00_ctl00_HyperLink4" href="https://sis-hatyai1.psu.ac.th/Manual/SISStaffManual.pdf" target="_blank">เจ้าหน้าที่</a><span><span><span style="font-size: 8pt">]<br>
+                                            คู่มือการใช้งานส่วนการเงิน : [</span><a id="ctl00_ctl00_HyperLink1" href="http://scm.psu.ac.th/Manuals/SIS/SISFinanceStudentManual.pdf" target="_blank">นักศึกษา</a><span style="font-size: 8pt">][</span><a id="ctl00_ctl00_HyperLink5" href="http://scm.psu.ac.th/Manuals/SIS/SISFinanceStaffManual.pdf" target="_blank">เจ้าหน้าที่</a><span style="font-size: 8pt">]<br>
+                                                        </span></span>
+                                            <span>
+                                                <span id="ctl00_ctl00_lbSupportContact" style="font-size:8pt;">Contact Registrar's Division, Tel. 0-7428-9260-8 E-Mail: <a href="mailto:reg@psu.ac.th">reg@psu.ac.th</a><br><font color="#D3D3D3">Copyright © 2023 Office of Digital Innovation and Intelligent Systems. Prince of Songkla University. All rights reserved. <br>Tel. 0-7428-2072, 0-7428-2124 E-Mail: <a href="mailto:support@psu.ac.th"><font color="#D3D3D3">support@psu.ac.th</font></a></font></span><span style="font-size: 8pt"> </span>
+                                            </span>
+                                        </span></td>
+            </tr>
+        </tbody></table>
+        
+        &nbsp;
+    </form>
+
+
+<div id="E8A7AE99-A936-4F74-CD1D-515F5CCDE58E"></div></body></html>

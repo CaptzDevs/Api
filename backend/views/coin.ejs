@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    main{
+        background: #323232;
+    }
+    .data-section{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .data-item{
+        width: 100%;
+        min-height: 150px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: #404040;
+        border-radius: 10px;
+        color: white;
+        gap: 20px;
+    }
+    .data-item-body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 2rem;
+    }
+    .data-rank{
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .data-img{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .data-name{
+        font-size: 2rem;
+    }
+    .data-artist{
+        width: 100%;
+        font-size: .8rem;
+    }
+    .data-price{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .data-item img{
+        border-radius: 10px;
+    }
+ 
+
+   
+</style>
+<body>
+
+    <main>
+        <section class="data-section">
+            <% data.map((item,i)=>{ %>
+            <div class="data-item">
+                <div class="data-rank"><%= item.rank %></div>
+                <img class="data-img" src="<%= item.img %>" alt="" srcset="">
+
+                <div class="data-item-body">
+                    <span class="data-name">  <%= item.fullName  %></span>
+                    <span class="data-artist">  <%= item.shortName  %></span>
+                    <span class="data-price" id="<%= item.shortName %>">  <%= item.price %></span>
+                </div>
+            </div>
+            <% }) %>
+        </section>
+</main>
+
+    
+</body>
+<script>
+   setInterval( async () =>{ 
+   
+   let data =  fetch('http://localhost:4000/api/coin').then(async res=>{
+            let data = await res.json().then(res=>{
+                res.map((item)=>{
+                    if(item.price && item.shortName ){
+                        document.getElementById(item.shortName).innerText = `${item.price}`
+                    }
+                    
+                })
+            })
+        })
+       
+        
+   },1500)
+
+   
+</script>
+</html>

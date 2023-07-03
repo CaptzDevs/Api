@@ -14,6 +14,7 @@ const session = require('express-session');
 axios.defaults.baseURL = 'http://localhost:4000/';
 
 async function generateAndDownloadPDF(url) {
+  
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 

@@ -12,8 +12,11 @@ const request = require('request');
 const session = require('express-session');
 const ExcelJS = require('exceljs');
 
+const CourseList = require('./../api/courseList.json')
+
 
 axios.defaults.baseURL = 'http://localhost:4000/';
+
 
 
 router.post('/data', async (req,res)=>{ 

@@ -172,7 +172,7 @@ router.get('/billboardTop100',(req,res)=>{
           json.artist.forEach(item=>{
             if(item.length > 0){
               artistArr.push(
-              itemc
+              item
               );
             }
           })

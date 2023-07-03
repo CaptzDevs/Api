@@ -11,9 +11,9 @@ const request = require('request');
 
 router.get("/",async (req,res)=>{
 
-    const avalibleApi = ['Billboard Top 100','Crypto Price','Schedule']
-    const view = ['/view/BillboardTop100','/view/coin','/Schedule/schedule']
-    const endpoint  = ['/api/billboardTop100','/api/coin','/Schedule/json']
+    const avalibleApi = ['Billboard Top 100','Crypto Price','Schedule',"Course"]
+    const view = ['/view/BillboardTop100','/view/coin','/Schedule/schedule','/Course']
+    const endpoint  = ['/api/billboardTop100','/api/coin','/Schedule/json','/Course/json']
 
     let apiData = []
     for (let i = 0 ; i < avalibleApi.length; i++){

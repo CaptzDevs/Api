@@ -85,7 +85,7 @@ router.get('/twitter', async (req,res)=>{
     await autoScroll(page);
 
 
-  let img  =  await page.$$eval(`.r-u8s1d.r-ipm5af.r-13qz1uu > div > img`, elements => elements.map(el => el.src)); 
+  let img  =  await page.$$eval(`img`, elements => elements.map(el => el.src)); 
   
   browser.close()
 
@@ -116,7 +116,7 @@ await page.evaluate(async () => {
 
 
 
-router.get('/coin', async (req,res)=>{ 
+router.get('/coin/json', async (req,res)=>{ 
   let query = req.query
   let limit = query.limit || 15
   
@@ -124,8 +124,28 @@ router.get('/coin', async (req,res)=>{
 })
 
 
+router.get("/BillboardTop100/",async (req,res)=>{
 
-router.get('/billboardTop100',(req,res)=>{
+  let SongData = await axios.get('/api/billboardTop100/json').then(res=>{
+      return res.data
+  })
+
+    res.render('music',{data:SongData})
+
+})
+
+router.get("/coin",async (req,res)=>{
+
+  let coinData = await axios.get('/api/coin/json').then(res=>{
+      return res.data
+  })
+
+    res.render('coin',{data:coinData})
+
+})
+
+
+router.get('/billboardTop100/json',(req,res)=>{
 
     let limit = req.query.limit || 100
     

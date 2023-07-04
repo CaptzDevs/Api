@@ -48,17 +48,18 @@ async function takeScreenshot(url) {
     deviceScaleFactor: 1,
   }); */
   
-  await page.goto(url, { waitUntil: 'networkidle0' });
-  const path = 'screenshot.jpg';
+  
 
-  const screenshot = await page.screenshot({
-    path: path,
-    fullPage: true 
-  });
-
-  await browser.close();
-  return path
-
+      await page.goto(url, { waitUntil: 'networkidle0' });
+      const path = 'screenshot.jpg';
+    
+      const screenshot = await page.screenshot({
+        path: path,
+        fullPage: true 
+      });
+    
+      await browser.close();
+      return path
 }
 
 router.get('/coin2', async (req,res,e)=>{ 
@@ -154,7 +155,7 @@ router.get('/screenshot',(req,res)=>{
   if(req.query.url){
 
   takeScreenshot(req.query.url).then(pdf => {
-    console.log('PDF generated successfully');
+    console.log('📸 Take screenshot successfully');
     let filepath =  path.join(path.dirname(__dirname),'screenshot.jpg')
     res.sendFile(filepath);
   })

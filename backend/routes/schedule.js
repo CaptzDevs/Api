@@ -12,20 +12,143 @@ const request = require('request');
 const session = require('express-session');
 const ExcelJS = require('exceljs');
 
-const CourseList = require('./../api/courseList.json')
-
+const CourseList = require('./../api/courseList.json');
 
 axios.defaults.baseURL = 'http://localhost:4000/';
+
+function delay(time) {
+    return new Promise(function(resolve) { 
+        setTimeout(resolve, time)
+    });
+ }
+
+
+ const UserScheduleConfig = {
+    username : '6610210505',
+    password : 'captzswk1.',
+    year : 2566,
+    semester : 1,
+ }
+ 
+
+async function getSchedule() {
+    
+ 
+
+
+    return new Promise(async resolve => {
+        console.log("setting up...");
+        const browser = await puppeteer.launch({});
+
+        const page = await browser.newPage();
+        const url = "https://sso.psu.ac.th/adfs/ls/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsis-hatyai1.psu.ac.th%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fLogin.aspx&wct=2023-07-04T18%3a50%3a38Z&wreply=https%3a%2f%2fsis-hatyai1.psu.ac.th%2f";
+        await page.setDefaultNavigationTimeout(0);
+
+        await page.goto(url);
+        console.log(`✅ Go to ${url} `);
+
+        let username = await page.$(`#userNameArea input`);
+        let password = await page.$(`#passwordArea input`);
+
+        let btnLogin = await page.$("#submitButton");
+
+        /* let loginToken = await page.$('#login > input[type=hidden]:nth-child(3)')
+         loginToken = await loginToken.evaluate(item => item.value) */
+
+        await username.click();
+        await page.keyboard.type(UserScheduleConfig.username);
+
+        await password.click();
+        await page.keyboard.type(UserScheduleConfig.password);
+
+        await btnLogin.click();
+        
+        console.log(`✅ Checking user `);
+
+        await page.waitForNavigation();
+
+        //After Login
+        const cookies = await page.cookies();
+
+        await page.setCookie(...cookies);
+
+        const cookieValue = cookies;
+        if (cookieValue) console.log(`🔓 Logged in `);
+
+        console.log("👾 OK , I'm in")
+        /* console.log("🍪 cookie: " + JSON.stringify(cookieValue)); */
+        /* console.log("🔑 Token :"+loginToken) */
+
+        await page.goto("https://sis-hatyai1.psu.ac.th/Student/StudentClassDate.aspx");
+        
+     
+        let optionValue = await page.$$eval('#ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear option', (options, value) => {
+            return options.some(option => option.value === value);
+          }, `${UserScheduleConfig.semester}/${UserScheduleConfig.year}`);
+   
+        if(optionValue){
+
+            await page.select('#ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear', `${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
+            
+        let btn_showSchedule = await page.$("#ctl00_ctl00_mainContent_PageContent_btnShow");
+        await btn_showSchedule.click();
+
+        await page.waitForSelector("#ctl00_ctl00_mainContent_PageContent_lbStudentFullName");
+
+
+    
+        const path = "screenshot.jpg";
+        const screenshot = await page.screenshot({
+           path: path,
+           fullPage: true,
+         });
+
+        browser.close();
+
+        console.log("✅ Finish");
+        
+        resolve(await page.content());
+    }else{
+        console.log(`❌ No Subject Registered On ${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
+        
+        resolve({error:'No Subject Registered'});
+
+    }
+      })
+  
+  }
 
 
 
 router.post('/data', async (req,res)=>{ 
     if(req.body.key == '555'){
-        const tableFile = path.join(__dirname,'..','/assets/ตารางเรียน.html')
-        res.sendFile(tableFile)
+        let tableFile = ''
+        const filename = `cache_${UserScheduleConfig.username}_${UserScheduleConfig.semester}_${UserScheduleConfig.year}_schedule.json`
+        const filepath = path.join(process.env.project_path,'/cache',filename)
+
+        if (!fs.existsSync(filepath)) {
+            console.log("🌐 Fetch Data SIS")
+            tableFile = await getSchedule();
+
+            res.send({type: 'html',data: tableFile})
+       
+
+        }else{  
+            console.log("💾 Fetch Data from Cache")
+
+            try{
+                const data = fs.readFileSync(filepath, 'utf8');
+                res.send({type: 'json',data: data})
+
+            } catch (err) {
+                console.error(err);
+
+            }
+
+        }
+      
     }else{
-        res.status(404);
-        res.send('Invalid Key')
+        res.send('Invalid Key');
     }
   
 })
@@ -33,16 +156,53 @@ router.post('/data', async (req,res)=>{
 router.get("/schedule" , async (req,res)=>{
 
     let scheduleData = await axios.get("/schedule/json")
-    res.render("schedule",{data:scheduleData.data})
+    if(!scheduleData.data.error){
+        res.render("schedule",{data:scheduleData.data})
+
+    }else{
+        res.send(scheduleData.data.error)
+    }
 })
 
 router.get('/json', async (req,res)=>{ 
     
+    console.log("📡 Fetching Data...")
+
 
     axios.post('/schedule/data',{key:555}).then(response=>{
-        console.log(response.status )
-        
-        let html = response.data
+        if(response.data.data.error){
+                console.log("------------------------------")
+                console.log(`❌ ${response.data.data.error}`);
+                console.log("❌ Can't Rendered Schedule")
+                console.log("✨ Try another semester or year")
+                res.json({"error":'No Subject Registered'})
+        }
+        else if(response.data.type == 'json'){
+
+            let parsedData = JSON.parse(response.data.data)
+            if(parsedData.subjectSet.length > 0){
+
+                res.json(JSON.parse(response.data.data))
+                
+                console.log("✅ Rendered Schedule")
+                console.log('------------Rendered Schedule--------------')
+
+            }else{
+
+                console.log("------------------------------")
+                console.log("❌ No Subject Registered");
+                console.log("❌ Can't Rendered Schedule")
+                console.log("✨ Try another semester or year")
+
+                console.log('-----------END--------------')
+
+                res.json({"error":'No Subject Registered'})
+            }
+
+        }else{
+            
+
+        let html = response.data.data
         let $ = cheerio.load(html);
 
         let table = $("table#ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_GridView1").text()
@@ -51,7 +211,7 @@ router.get('/json', async (req,res)=>{
        
         let [stdID,name] = $("#ctl00_ctl00_mainContent_PageContent_lbStudentFullName").text().split(" : ")
 
-        let term = $("#ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_lblTerm").text()
+        let semester = $("#ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_lblTerm").text()
         let year =  $("#ctl00_ctl00_mainContent_PageContent_UcGridViewClassDate1_lblYear").text()
 
         let subjectSet = []
@@ -61,7 +221,7 @@ router.get('/json', async (req,res)=>{
             profile: {
                 name : `${name}`,
                 studentID : stdID,
-                term : term,
+                semester : semester,
                 year : year,
 
             },
@@ -103,11 +263,41 @@ router.get('/json', async (req,res)=>{
         Data.schedule = rowData
         Data.subjectSet = subjectSet
 
-      
-        console.log('------------Rendered JSON--------------')
-        res.json(Data)
 
+
+        if(subjectSet.length > 0){
+
+            res.json(Data)
+            console.log("✅ Rendered Schedule")
+            console.log('------------Rendered Schedule--------------')
+
+               //save cache 💾
+        const filename = `cache_${UserScheduleConfig.username}_${UserScheduleConfig.semester}_${UserScheduleConfig.year}_schedule.json`
+        const filepath = path.join(process.env.project_path,'/cache',filename)
+        fs.writeFile(filepath, JSON.stringify(Data), (err) => {
+            if (err) {
+              console.error('Error creating the file:', err);
+            } else {
+              console.log('File created and data written successfully.');
+            }
+          });
+
+        }else{
+            console.log("❌ No Subject Registered");
+            console.log("❌ Can't Rendered Schedule")
+            console.log('-----------END--------------')
+
+            res.json({"error":'No Subject Registered'})
+
+        }
+
+        
+
+     
+
+        }
     })
+
   
 })
 

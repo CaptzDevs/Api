@@ -32,6 +32,12 @@ app.use(session({
   cookie: { secure: false ,maxAge: 6000000},
 }))
 
+/* app.use((req, res, next) => {
+  console.log(`${req.method} : ${req.url}`)
+  next();
+}); */
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())

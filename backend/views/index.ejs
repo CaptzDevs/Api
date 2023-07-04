@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Captz API</title>
 </head>
 <style>
     *{
@@ -17,6 +17,7 @@
         min-height: 100vh;
     }
     main{
+        min-height: 100vh;
         background: #323232;
         color: white;
         display: flex;
@@ -44,10 +45,10 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        flex-direction: column;
         padding: 20px;
         gap: 20px;
         border-radius: 10px;
+        flex-wrap: wrap;
    }
 
    .api-item{
@@ -58,6 +59,9 @@
         justify-content: flex-start;
         flex-direction: column;
         gap: 20px;
+        border: 1px solid white;
+        flex: 1 0 300px;
+
    }
    .api-links {
         display: flex;
@@ -88,7 +92,7 @@
             <% data.map((item,i) =>{ %>
 
             <div class="api-item">
-                <h2><%= i+1+'. '+item.name %></h2>
+                <h2><%=/*  i+1+'. '+ */item.name %></h2>
 
                    <div class="api-links">
                        <a class="api-link" href="<%= item.endpoint %>" target="_blank">Json </a>

@@ -142,6 +142,7 @@ router.get("/", async(req, res)=>{
 
 })
 
+
 router.get('/detail/:id',async (req,res)=>{
 
   if (req.session.user) {

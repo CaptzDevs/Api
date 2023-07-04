@@ -1,0 +1,249 @@
+{
+    "profile": {
+        "name": "วัชราภรณ์ แก้วศรี",
+        "studentID": "6210210356",
+        "semester": "1",
+        "year": "2565"
+    },
+    "schedule": [
+        {
+            "dayNumber": 0,
+            "day": "จันทร์",
+            "startTime": "09.00",
+            "endTime": "10.20",
+            "subjectID": "332-101",
+            "subjectName": "FUNDAMENTAL PHYSICS",
+            "credit": "3",
+            "section": "01",
+            "professor": [
+                "RADCHAGRIT SUPAKULOPAS",
+                "KOMRIT WATTANAVATEE",
+                "CHITTANON BURANACHAI",
+                "WANIDA SUMATHAKULAWAT",
+                "SUTTIDA RAKKAPAO",
+                "NARAKORN KAEWKHAO",
+                "PAPHAVEE VAN DOMMELEN"
+            ],
+            "room": "NML1"
+        },
+        {
+            "dayNumber": 0,
+            "day": "จันทร์",
+            "startTime": "11.00",
+            "endTime": "11.50",
+            "subjectID": "330-101",
+            "subjectName": "PRINCIPLES OF BIOLOGY I",
+            "credit": "3",
+            "section": "01",
+            "professor": [
+                "SINGTOE BOONROTPONG",
+                "KWAN NUALCHAROEN",
+                "PATAMARERK ENGSONTIA",
+                "CHARAN LEERATIWONG",
+                "TIDARAT PUANGPAIROTE",
+                "DANIA CHEAHA",
+                "KRINGPAKA WANGKULANGKUL",
+                "JARUWAN MAYAKUN",
+                "MATSAPUME  DETCHAROEN",
+                "UPATHAM MEESAWAT",
+                "CHUTCHAWAN MUENPO",
+                "SANSAREEYA WANGKULANGKUL",
+                "PIMCHANOK BUAPET",
+                "ARIYA DEJTARADOL",
+                "RUJINARD SRIWOON"
+            ],
+            "room": "L1"
+        },
+        {
+            "dayNumber": 0,
+            "day": "จันทร์",
+            "startTime": "13.00",
+            "endTime": "15.50",
+            "subjectID": "340-213",
+            "subjectName": "METAL PLATING INDUSTRIAL SCI",
+            "credit": "2",
+            "section": "01",
+            "professor": [
+                "WARAKORN LIMBUT"
+            ],
+            "room": "BSc0307"
+        },
+        {
+            "dayNumber": 1,
+            "day": "อังคาร",
+            "startTime": "13.00",
+            "endTime": "15.50",
+            "subjectID": "340-312",
+            "subjectName": "ELECTRO SENSORS FOR ENVIRON",
+            "credit": "3",
+            "section": "01",
+            "professor": [
+                "WARAKORN LIMBUT"
+            ],
+            "room": "BSc0304"
+        },
+        {
+            "dayNumber": 1,
+            "day": "อังคาร",
+            "startTime": "16.00",
+            "endTime": "17.50",
+            "subjectID": "316-200",
+            "subjectName": "MATERIALS IN DAILY LIFE",
+            "credit": "2",
+            "section": "01",
+            "professor": [
+                "PHAIROTE SUNGKHAPHAITOON",
+                "PORNSUDA BOMLAI",
+                "CHUANPIT KHAOKONG",
+                "SUMETHA SUWANBOON"
+            ],
+            "room": "วท1"
+        },
+        {
+            "dayNumber": 2,
+            "day": "พุธ",
+            "startTime": "09.00",
+            "endTime": "10.20",
+            "subjectID": "332-101",
+            "subjectName": "FUNDAMENTAL PHYSICS",
+            "credit": "3",
+            "section": "01",
+            "professor": [
+                "RADCHAGRIT SUPAKULOPAS",
+                "KOMRIT WATTANAVATEE",
+                "CHITTANON BURANACHAI",
+                "WANIDA SUMATHAKULAWAT",
+                "SUTTIDA RAKKAPAO",
+                "NARAKORN KAEWKHAO",
+                "PAPHAVEE VAN DOMMELEN"
+            ],
+            "room": "NML1"
+        },
+        {
+            "dayNumber": 2,
+            "day": "พุธ",
+            "startTime": "11.00",
+            "endTime": "11.50",
+            "subjectID": "330-101",
+            "subjectName": "PRINCIPLES OF BIOLOGY I",
+            "credit": "3",
+            "section": "01",
+            "professor": [
+                "SINGTOE BOONROTPONG",
+                "KWAN NUALCHAROEN",
+                "PATAMARERK ENGSONTIA",
+                "CHARAN LEERATIWONG",
+                "TIDARAT PUANGPAIROTE",
+                "DANIA CHEAHA",
+                "KRINGPAKA WANGKULANGKUL",
+                "JARUWAN MAYAKUN",
+                "MATSAPUME  DETCHAROEN",
+                "UPATHAM MEESAWAT",
+                "CHUTCHAWAN MUENPO",
+                "SANSAREEYA WANGKULANGKUL",
+                "PIMCHANOK BUAPET",
+                "ARIYA DEJTARADOL",
+                "RUJINARD SRIWOON"
+            ],
+            "room": "L1"
+        },
+        {
+            "dayNumber": 2,
+            "day": "พุธ",
+            "startTime": "15.00",
+            "endTime": "16.50",
+            "subjectID": "890-032",
+            "subjectName": "ENGLISH FOR TRAVELERS",
+            "credit": "2",
+            "section": "02",
+            "professor": [
+                "NARATIP JINDAPITAK"
+            ],
+            "room": "ONLINE"
+        },
+        {
+            "dayNumber": 3,
+            "day": "พฤหัส",
+            "startTime": "09.00",
+            "endTime": "10.50",
+            "subjectID": "340-331",
+            "subjectName": "INTRO TO PHYTOCHEMICALS",
+            "credit": "2",
+            "section": "01",
+            "professor": [
+                "KRUEAWAN YOONRAM"
+            ],
+            "room": "BSc0305"
+        },
+        {
+            "dayNumber": 4,
+            "day": "ศุกร์",
+            "startTime": "11.00",
+            "endTime": "11.50",
+            "subjectID": "330-101",
+            "subjectName": "PRINCIPLES OF BIOLOGY I",
+            "credit": "3",
+            "section": "01",
+            "professor": [
+                "SINGTOE BOONROTPONG",
+                "KWAN NUALCHAROEN",
+                "PATAMARERK ENGSONTIA",
+                "CHARAN LEERATIWONG",
+                "TIDARAT PUANGPAIROTE",
+                "DANIA CHEAHA",
+                "KRINGPAKA WANGKULANGKUL",
+                "JARUWAN MAYAKUN",
+                "MATSAPUME  DETCHAROEN",
+                "UPATHAM MEESAWAT",
+                "CHUTCHAWAN MUENPO",
+                "SANSAREEYA WANGKULANGKUL",
+                "PIMCHANOK BUAPET",
+                "ARIYA DEJTARADOL",
+                "RUJINARD SRIWOON"
+            ],
+            "room": "L1"
+        },
+        {
+            "dayNumber": 4,
+            "day": "ศุกร์",
+            "startTime": "13.00",
+            "endTime": "14.50",
+            "subjectID": "340-253",
+            "subjectName": "EVERYDAY SCIENCE",
+            "credit": "2",
+            "section": "02",
+            "professor": [
+                "KRUEAWAN YOONRAM",
+                "ADUL THIANGCHANYA",
+                "TERDTOON DUMRONGRITTAMATT"
+            ],
+            "room": "NML1"
+        },
+        {
+            "dayNumber": 4,
+            "day": "ศุกร์",
+            "startTime": "16.00",
+            "endTime": "17.50",
+            "subjectID": "340-351",
+            "subjectName": "INTRO TO CRIME DETECTION",
+            "credit": "2",
+            "section": "01",
+            "professor": [
+                "TERDTOON DUMRONGRITTAMATT",
+                "KRUEAWAN YOONRAM"
+            ],
+            "room": "NML1"
+        }
+    ],
+    "subjectSet": [
+        "FUNDAMENTAL PHYSICS",
+        "PRINCIPLES OF BIOLOGY I",
+        "METAL PLATING INDUSTRIAL SCI",
+        "ELECTRO SENSORS FOR ENVIRON",
+        "MATERIALS IN DAILY LIFE",
+        "ENGLISH FOR TRAVELERS",
+        "INTRO TO PHYTOCHEMICALS",
+        "EVERYDAY SCIENCE",
+        "INTRO TO CRIME DETECTION"
+    ]
+}

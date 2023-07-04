@@ -84,7 +84,6 @@
 </style>
 <body>
     <main>
-        <h1 id="loading-text"><%= loadingText %></h1>
         <h1>Courses </h1>
         <% data.courseList.forEach((item)=>{ %>
             <a target="" href="<%= `${process.env.base_url}/Course/detail/${item.id}` %> ">

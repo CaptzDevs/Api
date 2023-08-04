@@ -22,20 +22,26 @@ function delay(time) {
     });
  }
 
-
  const UserScheduleConfig = {
     username : '6610210505',
     password : 'captzswk1.',
     year : 2566,
     semester : 1,
  }
- 
 
-async function getSchedule() {
+ const WebConfig = {
+    port : 27,
+ }
+
+ //* init year refer to  first 2 charactor from username
+ UserScheduleConfig.year = +'25'+UserScheduleConfig.username.slice(0,2)
+
+
+async function getSchedule(option = {semester : UserScheduleConfig.semester, year: UserScheduleConfig.year}) {
     
- 
-
-
+    UserScheduleConfig.semester = option.semester || UserScheduleConfig.semester
+    UserScheduleConfig.year = option.year || UserScheduleConfig.year
+    
     return new Promise(async resolve => {
         console.log("setting up...");
         const browser = await puppeteer.launch({});
@@ -79,16 +85,26 @@ async function getSchedule() {
         /* console.log("🍪 cookie: " + JSON.stringify(cookieValue)); */
         /* console.log("🔑 Token :"+loginToken) */
 
-        await page.goto("https://sis-hatyai1.psu.ac.th/Student/StudentClassDate.aspx");
-        
+     /*    const path = "screenshot.jpg";
+        const screenshot = await page.screenshot({
+           path: path,
+           fullPage: true,
+         }); */
+
+        await page.goto(`https://sis-hatyai${WebConfig.port}.psu.ac.th/Student/StudentClassDate.aspx`);
+    
      
+        console.log(`📑 get Schedule : ${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
+
         let optionValue = await page.$$eval('#ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear option', (options, value) => {
             return options.some(option => option.value === value);
           }, `${UserScheduleConfig.semester}/${UserScheduleConfig.year}`);
    
         if(optionValue){
 
-            await page.select('#ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear', `${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
+
+
+        await page.select('#ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear', `${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
             
         let btn_showSchedule = await page.$("#ctl00_ctl00_mainContent_PageContent_btnShow");
         await btn_showSchedule.click();
@@ -97,11 +113,7 @@ async function getSchedule() {
 
 
     
-        const path = "screenshot.jpg";
-        const screenshot = await page.screenshot({
-           path: path,
-           fullPage: true,
-         });
+      
 
         browser.close();
 
@@ -121,6 +133,14 @@ async function getSchedule() {
 
 
 router.post('/data', async (req,res)=>{ 
+
+    
+    let query_semester = req.body.semester
+    let query_year = req.body.year
+
+    UserScheduleConfig.semester = req.body.semester || UserScheduleConfig.semester
+    UserScheduleConfig.year = req.body.year || UserScheduleConfig.year
+
     if(req.body.key == '555'){
         let tableFile = ''
         const filename = `cache_${UserScheduleConfig.username}_${UserScheduleConfig.semester}_${UserScheduleConfig.year}_schedule.json`
@@ -128,7 +148,10 @@ router.post('/data', async (req,res)=>{
 
         if (!fs.existsSync(filepath)) {
             console.log("🌐 Fetch Data SIS")
-            tableFile = await getSchedule();
+            tableFile = await getSchedule( {
+                semester:query_semester,
+                year:query_year
+            });
 
             res.send({type: 'html',data: tableFile})
        
@@ -154,11 +177,19 @@ router.post('/data', async (req,res)=>{
 })
 
 router.get("/schedule" , async (req,res)=>{
+    let query_semester = req.query.semester
+    let query_year = req.query.year
 
-    let scheduleData = await axios.get("/schedule/json")
+    let scheduleData = await axios.get("/schedule/json",
+    {params:
+        {
+            semester:query_semester,
+            year:query_year
+        }
+    })
+    
     if(!scheduleData.data.error){
         res.render("schedule",{data:scheduleData.data})
-
     }else{
         res.send(scheduleData.data.error)
     }
@@ -168,8 +199,14 @@ router.get('/json', async (req,res)=>{
     
     console.log("📡 Fetching Data...")
 
+    let query_semester = req.query.semester
+    let query_year = req.query.year
 
-    axios.post('/schedule/data',{key:555}).then(response=>{
+    UserScheduleConfig.semester = query_semester || UserScheduleConfig.semester
+    UserScheduleConfig.year = query_year || UserScheduleConfig.year
+
+    axios.post('/schedule/data',{key:555,semester:query_semester,year:query_year}).then(response=>{
+
         if(response.data.data.error){
                 console.log("------------------------------")
                 console.log(`❌ ${response.data.data.error}`);

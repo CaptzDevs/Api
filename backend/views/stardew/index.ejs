@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stardew</title>
+    <link rel="stylesheet" href="/css/root.css" />
+  </head>
+  <style>
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    ::-webkit-datetime-edit-text {
+      color: rgb(88, 88, 88);
+      padding: 0 0.3em;
+    }
+
+    ::-webkit-calendar-picker-indicator {
+      color: rgb(0, 195, 255);
+      cursor: pointer;
+      margin-top: 3px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: rgb(255, 255, 255);
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+    }
+
+    main {
+    width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    section.banner {
+      width: 100%;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      
+    }
+
+    section.season {
+      width: 70%;
+      min-width: 300px;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      padding-top: 60px;
+    }
+
+    section.season .label {
+      padding: 5px 10px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      border-left: 3px solid rgb(255, 255, 255);
+      letter-spacing: 2px;
+      color: white;
+    }
+
+    .plant {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-top: 0;
+    }
+
+    .plant-item {
+      width: 40%;
+     /*  max-width: 230px; */
+      min-width: 230px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px;
+      padding-top: 20px;
+      background: white;
+      border-radius: 10px;
+    }
+    .plant-item img {
+      max-width: 40px;
+      min-width: 40px;
+      object-fit: contain;
+    }
+    .plant-item .plant-detail {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+    .plant-detail h2{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .plant-detail span{
+        font-size: .5rem;
+    }
+
+
+    .plant-sub{
+      width: 30%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      gap: 10px;
+      border-radius: 10px;
+      background: #ffffff;
+    }
+
+    .plant-sub-item{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .plant-sub-item img{
+      width: 10%;
+        
+    }
+
+    .season-spring {
+      background: var(--green3);
+    }
+    .season-summer {
+      background: var(--yellow4);
+    }
+    .season-fall {
+      background: var(--orange4);
+    }
+    .season-winter {
+      background: var(--cyan4);
+    }
+
+    .image-set{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  </style>
+  <body>
+    <main>
+      <section class="banner">
+        <div class="image-set">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/1/18/Banner_Left.png" alt="">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/6/68/Main_Logo.png" alt="">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/4/4a/Banner_Right.png" alt="">
+        </div>
+
+        <h1 style="font-size: 2rem; ">API</h1>
+
+      </section>
+
+      <section class="season season-spring">
+        <div class="label">
+          Spring <i class="fa-sharp fa-solid fa-seedling"></i>
+        </div>
+        <div class="plant">
+          <div class="plant-item">
+            <img
+              src="https://stardewvalleywiki.com/mediawiki/images/9/90/Wild_Horseradish.png"
+              alt=""
+            />
+            <div class="plant-detail">
+              <h2>Wild Horseradish</h2>
+              <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et</span>
+            </div>
+          </div>
+          <div class="plant-item">
+            <img
+              src="https://stardewvalleywiki.com/mediawiki/images/4/4b/Daffodil.png"
+              alt=""
+            />
+            <div class="plant-detail">
+              <h2>Daffodil</h2>
+              <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et</span>
+            </div>
+          </div>
+          <div class="plant-item">
+            <img
+              src="https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png"
+              alt=""
+            />
+            <div class="plant-detail">
+              <h2>Leek</h2>
+              <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et</span>
+            </div>
+          </div>
+          <div class="plant-item">
+            <img
+              src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Dandelion.png"
+              alt=""
+            />
+            <div class="plant-detail">
+              <h2>Dandelion</h2>
+              <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="plant-sub">
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/2/2f/Blue_Jazz.png" alt="">
+                    <div class="plant-detail">Blue Jazz</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/a/aa/Cauliflower.png" alt="">
+                    <div class="plant-detail">Cauliflowerz</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/c/cc/Garlic.png" alt="">
+                    <div class="plant-detail">Garlic</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/d/d1/Kale.png" alt="">
+                    <div class="plant-detail">Kale</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/d/db/Parsnip.png" alt="">
+                    <div class="plant-detail">Parsnip</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/c/c2/Potato.png" alt="">
+                    <div class="plant-detail">Potato</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/6/6e/Rhubarb.png" alt="">
+                    <div class="plant-detail">Rhubarb</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/c/cf/Tulip.png" alt="">
+                    <div class="plant-detail">Tulip</div>
+                </div>
+                <div class="plant-sub-item">
+                    <img src="https://stardewcommunitywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png" alt="">
+                    <div class="plant-detail">Unmilled Rice</div>
+                </div>
+
+
+        </div>
+      </section>
+
+    </main>
+  </body>
+  <script src="/plugin/fontawesome/all.min.js"></script>
+</html>

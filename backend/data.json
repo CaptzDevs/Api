@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Blue Jazz",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2f/Blue_Jazz.png",
+    "detail": "The flower grows in a sphere to invite as many butterflies as possible.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/95/Jazz_Seeds.png"
+  },
+  {
+    "name": "Cauliflower",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/aa/Cauliflower.png",
+    "detail": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/b/bb/Cauliflower_Seeds.png"
+  },
+  {
+    "name": "Coffee Bean",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/33/Coffee_Bean.png",
+    "detail": "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/3/33/Coffee_Bean.png"
+  },
+  {
+    "name": "Garlic",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cc/Garlic.png",
+    "detail": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d5/Garlic_Seeds.png"
+  },
+  {
+    "name": "Green Bean",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Green_Bean.png",
+    "detail": "A juicy little bean with a cool, crisp snap.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/26/Bean_Starter.png"
+  },
+  {
+    "name": "Kale",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d1/Kale.png",
+    "detail": "The waxy leaves are great in soups and stir frys.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/00/Kale_Seeds.png"
+  },
+  {
+    "name": "Parsnip",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Parsnip.png",
+    "detail": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d3/Parsnip_Seeds.png"
+  },
+  {
+    "name": "Potato",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Potato.png",
+    "detail": "A widely cultivated tuber.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/44/Potato_Seeds.png"
+  },
+  {
+    "name": "Rhubarb",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6e/Rhubarb.png",
+    "detail": "The stalks are extremely tart, but make a great dessert when sweetened.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/47/Rhubarb_Seeds.png"
+  },
+  {
+    "name": "Strawberry",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6d/Strawberry.png",
+    "detail": "A sweet, juicy favorite with an appealing red color.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/f/f2/Strawberry_Seeds.png"
+  },
+  {
+    "name": "Tulip",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cf/Tulip.png",
+    "detail": "The most popular spring flower. Has a very faint sweet smell.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/42/Tulip_Bulb.png"
+  },
+  {
+    "name": "Unmilled Rice",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png",
+    "detail": "Rice in its rawest form. Run this through a mill to increase the value.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/84/Rice_Shoot.png"
+  },
+  {
+    "name": "Blueberry",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9e/Blueberry.png",
+    "detail": "A popular berry reported to have many health benefits. The blue skin has the highest nutrient concentration.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/81/Blueberry_Seeds.png"
+  },
+  {
+    "name": "Corn",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f8/Corn.png",
+    "detail": "One of the most popular grains. The sweet, fresh cobs are a summer favorite.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d1/Corn_Seeds.png"
+  },
+  {
+    "name": "Hops",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/59/Hops.png",
+    "detail": "A bitter, tangy flower used to flavor beer.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/9b/Hops_Starter.png"
+  },
+  {
+    "name": "Hot Pepper",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f1/Hot_Pepper.png",
+    "detail": "Fiery hot with a hint of sweetness.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/6/67/Pepper_Seeds.png"
+  },
+  {
+    "name": "Melon",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/19/Melon.png",
+    "detail": "A cool, sweet summer treat.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/5e/Melon_Seeds.png"
+  },
+  {
+    "name": "Poppy",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/37/Poppy.png",
+    "detail": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/a/a2/Poppy_Seeds.png"
+  },
+  {
+    "name": "Radish",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d5/Radish.png",
+    "detail": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/b/b1/Radish_Seeds.png"
+  },
+  {
+    "name": "Red Cabbage",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2d/Red_Cabbage.png",
+    "detail": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Red_Cabbage_Seeds.png"
+  },
+  {
+    "name": "Starfruit",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Starfruit.png",
+    "detail": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e0/Starfruit_Seeds.png"
+  },
+  {
+    "name": "Summer Spangle",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9f/Summer_Spangle.png",
+    "detail": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/85/Spangle_Seeds.png"
+  },
+  {
+    "name": "Sunflower",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/81/Sunflower.png",
+    "detail": "A common misconception is that the flower turns so it's always facing the sun.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/1f/Sunflower_Seeds.png"
+  },
+  {
+    "name": "Tomato",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Tomato.png",
+    "detail": "Rich and slightly tangy, the Tomato has a wide variety of culinary uses.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e3/Tomato_Seeds.png"
+  },
+  {
+    "name": "Wheat",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e2/Wheat.png",
+    "detail": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/2b/Wheat_Seeds.png"
+  },
+  {
+    "name": "Amaranth",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f6/Amaranth.png",
+    "detail": "A purple grain cultivated by an ancient civilization.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Amaranth_Seeds.png"
+  },
+  {
+    "name": "Artichoke",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/dd/Artichoke.png",
+    "detail": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/7/71/Artichoke_Seeds.png"
+  },
+  {
+    "name": "Beet",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a4/Beet.png",
+    "detail": "A sweet and earthy root vegatable. As a bonus, the leaves make a great salad.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/a/a8/Beet_Seeds.png"
+  },
+  {
+    "name": "Bok Choy",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/40/Bok_Choy.png",
+    "detail": "The leafy greens and fibrous stalks are healthy and delicious.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/21/Bok_Choy_Seeds.png"
+  },
+  {
+    "name": "Cranberries",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6e/Cranberries.png",
+    "detail": "These tart red berries are a traditional winter food.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Cranberry_Seeds.png"
+  },
+  {
+    "name": "Eggplant",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8f/Eggplant.png",
+    "detail": "A rich and wholesome relative of the tomato. Delicious fried or stewed.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/f/f9/Eggplant_Seeds.png"
+  },
+  {
+    "name": "Fairy Rose",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Fairy_Rose.png",
+    "detail": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/8e/Fairy_Seeds.png"
+  },
+  {
+    "name": "Grape",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Grape.png",
+    "detail": "A sweet cluster of fruit.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/de/Grape_Starter.png"
+  },
+  {
+    "name": "Pumpkin",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/64/Pumpkin.png",
+    "detail": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/99/Pumpkin_Seeds.png"
+  },
+  {
+    "name": "Yam",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/52/Yam.png",
+    "detail": "A starchy tuber with a lot of culinary versatility.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e9/Yam_Seeds.png"
+  },
+  {
+    "name": "Ancient Fruit",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Ancient_Fruit.png",
+    "detail": "It's been dormant for eons.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Ancient_Seeds.png"
+  },
+  {
+    "name": "Cactus Fruit",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Cactus_Fruit.png",
+    "detail": "The sweet fruit of the prickly pear cactus.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/09/Cactus_Seeds.png"
+  },
+  {
+    "name": "Fiber",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/45/Fiber.png",
+    "detail": "Raw material sourced from plants.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/05/Fiber_Seeds.png"
+  },
+  {
+    "name": "Mixed Seeds",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2e/Mixed_Seeds.png",
+    "detail": "There's a little bit of everything here. Plant them and see what grows!",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/2e/Mixed_Seeds.png"
+  },
+  {
+    "name": "Pineapple",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fb/Pineapple.png",
+    "detail": "A sweet and tangy tropical treat.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/17/Pineapple_Seeds.png"
+  },
+  {
+    "name": "Taro Root",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Taro_Root.png",
+    "detail": "This starchy root is one of the most ancient crops.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/57/Taro_Tuber.png"
+  },
+  {
+    "name": "Sweet Gem Berry",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/88/Sweet_Gem_Berry.png",
+    "detail": "It's by far the sweetest thing you've ever smelled.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/5b/Rare_Seed.png"
+  },
+  {
+    "name": "Tea Leaves",
+    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5b/Tea_Leaves.png",
+    "detail": "The young leaves of the tea plant. Can be brewed into the popular, energizing beverage.",
+    "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/12/Tea_Sapling.png"
+  }
+]

@@ -30,13 +30,16 @@
     
    section.banner{
         width: 100%;
-        height: 50vh;
-        background: #252525;
+        min-height: 50vh;
+        height: auto;
+        background: #373737;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         font-size: 2rem;
+        gap: 20px;
    }
 
    section.apis{
@@ -62,6 +65,7 @@
         border: 1px solid white;
         flex: 1 0 300px;
 
+
    }
    .api-links {
         display: flex;
@@ -72,19 +76,37 @@
         border: 1px solid white;
         padding: 10px;
         border-radius: 5px;
+        color: white !important;
+
     }
 
    a{
-        color: white;
+        color: rgb(60, 60, 71);
         text-decoration: none;
    }
-
+   .banner-img{
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        max-height: 300px;
+   }
+   .banner-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        user-select: none;
+        pointer-events: none;
+   }
 </style>
 <body>
 
     <main>
         <section class="banner">
+            <div class="banner-img">
+                <img src="/image/Hacker-amico-nobg.svg" alt="">
+            </div>
             <h1> Captz's API</h1>
+
         </section>
 
         <h1>Avaliable API(s)</h1>

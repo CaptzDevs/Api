@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+</head>
+<style>
+ 
+    ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--main-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+ *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    main{
+        width: 80%;
+        min-width: 300px;
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        flex: 1 0 auto;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: #ffffff;
+        padding: 20px;
+        gap: 20px;
+        
+    }
+    section {
+        position: relative;
+    }
+    section.banner{
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        gap: 20px;
+   }
+
+   .banner-img{
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        max-height: 300px;
+   }
+   .banner-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        user-select: none;
+        pointer-events: none;
+   }
+   section.menu{
+        width: 100%;
+        padding: 50px 25px;
+        border-radius: 10px;
+        background: #ededed;
+    }
+    .menu-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .menu-item{
+        width: 250px;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        flex-direction: column;
+        transition: .5s;
+
+    }
+    .menu-image{
+        width: 100%;
+        height: 100%;
+        background: #60a0e8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        
+    }
+    .menu-title{
+        width: 100%;
+        padding: 10px;
+        background: rgb(255, 255, 255);
+        text-align: center;
+
+    }
+
+    .menu-item:hover{
+        transition: .5s;
+        filter: drop-shadow(10px 10px #69a9f3);
+    }
+
+    .section-label{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-left: 5px solid black;
+        padding: 5px 15px;
+        z-index: 3;
+
+    }
+    header{
+        width: 100%;
+        max-width: 1800px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .header-menu-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .header-logo{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .header-menu-list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header-menu-end{
+
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+</style>
+<body>
+    <header>
+        <div class="header-logo">
+            LMS by captz
+        </div>
+        <div class="header-menu-list">
+            <a href="">Home</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+
+        </div>
+        <div class="header-menu-end">
+            <a href="">Logout</a>
+        </div>
+        
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-img">
+                <img src="/image/college project-amico.svg" alt="">
+            </div>
+            <h1> LMS </h1>
+            <span style="font-size: 1.3rem;"> by Captz</span>
+        </section>
+        <section class="menu">
+            <div class="section-label"> Main Menu </div>
+                <ul class="menu-list">
+                   
+                    <li class="menu-item" >
+                        <div class="menu-image">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="menu-title">Subjects</div>
+                    </li>
+                    <li class="menu-item" >
+                        <div class="menu-image">
+                            <img src="" alt="">
+                            <i class="fa-solid fa-table-list"></i>
+                        </div>
+                        <div class="menu-title">Schedule</div>
+                    </li>
+                    <li class="menu-item" >
+                        <div class="menu-image">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="menu-title">Grade</div>
+                    </li>
+                  
+                </ul>
+
+        </section>
+        <section class="menu">
+            <div class="section-label"> Main Menu </div>
+                <ul class="menu-list">
+                   
+                    <li class="menu-item" >
+                        <div class="menu-image">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="menu-title">Subjects</div>
+                    </li>
+                    <li class="menu-item" >
+                        <div class="menu-image">
+                            <img src="" alt="">
+                            <i class="fa-solid fa-table-list"></i>
+                        </div>
+                        <div class="menu-title">Schedule</div>
+                    </li>
+                    <li class="menu-item" >
+                        <div class="menu-image">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="menu-title">Grade</div>
+                    </li>
+                  
+                </ul>
+
+        </section>
+    </main>
+</body>
+</html>
+<script src="/plugin/fontawesome/all.min.js"></script>

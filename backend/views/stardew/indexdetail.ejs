@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Captz] Stardew</title>
+    <title>Stardew</title>
     <link rel="stylesheet" href="/css/root.css" />
-    <link rel="shortcut icon" href="https://stardewvalleywiki.com/mediawiki/images/d/db/Starfruit.png"/>
   </head>
   <style>
     ::-webkit-scrollbar {
@@ -56,17 +55,13 @@
     }
 
     main {
-      max-width: 1500px;
-      min-width: 300px;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       padding: 20px;
       flex-direction: column;
-      gap: 20px;
-      overflow-x: hidden;
-
+      gap: 10px;
     }
 
     section.banner {
@@ -127,20 +122,20 @@
       position: relative;
       padding-top: 60px;
       border: 1px solid black;
-      background: #ffffff;
-      filter: drop-shadow(10px 10px var(--green4));
-
+      gap: 50px;
     }
     .season-all .plant{
-      width: 25%;
+      width: 80%;
       min-width: 200px;
-      min-height: 180px;
-      max-height: 180px;
       cursor: pointer;
       border-radius: 10px;
       background: #ffffff;
-      color: black;
-      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      border: 1px solid black;
     }
 
     .season-all .plant:hover{
@@ -150,6 +145,7 @@
     .season-all .plant-item{
       width: 100% !important;
     }
+    
     .season-all .label{
       color: black;
       border-left: 3px solid black;
@@ -172,6 +168,7 @@
       padding: 10px;
       padding-top: 20px;
       border-radius: 10px;
+      background: #ffffff;
     }
     .plant-item img {
       max-width: 40px;
@@ -240,131 +237,6 @@
       align-items: center;
       justify-content: center;
     }
-    .image-set img{
-      width: 40%;
-    }
-     .season-all-detail{
-      width: 70%;
-      border-radius: 10px;
-      padding: 20px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-wrap: wrap;
-      position: relative;
-      padding-top: 60px;
-      border: 1px solid black;
-      gap: 20px;
-      background: #ffffff;
-      filter: drop-shadow(10px 10px var(--green4));
-
-    }
-    .season-all-detail .plant{
-      width: 100%;
-      min-width: 200px;
-      cursor: pointer;
-      border-radius: 10px;
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-     /*  flex-wrap: wrap; */
-      gap: 20px;
-      padding: 30px;
-      border: 1px solid black;
-    }
-
-    .season-all-detail .plant:hover{
-      filter: drop-shadow(5px 5px rgb(73, 73, 73));
-    }
-
-    .season-all-detail .plant-item{
-      width: 100%;
-    }
-    
-    .season-all-detail .label{
-      color: black;
-      border-left: 3px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .plane-phase{
-      /* width: 100%; */
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 20px;
-      
-    }
-    .plane-phase-item img{
-      width: 40px;
-    }
-
-    .plane-phase-item{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .phase-day{
-      font-size: .6rem;
-      text-align: center;
-      width: 100%;
-    }
-
-
-    @media screen and (max-width:1200px) {
-      /*   .season-all-detail{
-          width: 100%;
-        } */
-        .season-all-detail .plant{
-          flex-wrap: wrap;
-        }
-    }
-
-    @media screen and (max-width:850px) {
-        .season-all{
-          width: 100%;
-        }
-        .season-all-detail{
-          width: 100%;
-        }
-    }
-
-    @media screen and (max-width:630px) {
-        .season-all-detail .plant{
-          width: 100%;
-        }
-    }
-
-    @media screen and (max-width:500px) {
-        .plane-phase img{
-          width: 50px;
-        }
-        .season-all .plant .plant-item{
-          min-width: 0px;
-        }
-        .plane-phase img{
-          width: 35px;
-        }
-    
-    }
-
-  
-
-    @media screen and (max-width:350px) {
-        .plane-phase {
-          flex-direction: column-reverse;
-        align-items: center;
-
-        }
-      
-    }
-
   
   </style>
   <body>
@@ -391,97 +263,6 @@
         <div class="label">
           <span>All Crop</span> <i class="fa-sharp fa-solid fa-seedling"></i>
         </div>
-        <% crops.map((item , i)=>{ %>
-
-        <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
-          <div class="plant-item">
-            <img src="<%= item.image %>" alt="" />
-
-
-            <div class="plant-detail">
-              <h2><%= item.name %></h2>
-              <span><%= item.detail %></span>
-            </div>
-          </div>
-        </a>
-
-        
-        <% }) %>
-      </section>
-
-
-      <section class="season-all">
-        <div class="label">
-          <span>All Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
-        </div>
-        <% minerals.foraged.map((item , i)=>{ %>
-
-        <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
-          <div class="plant-item">
-            <img src="<%= item.image %>" alt="" />
-
-
-            <div class="plant-detail">
-              <h2><%= item.name %></h2>
-              <span><%= item.detail %></span>
-            </div>
-          </div>
-        </a>
-
-        
-        <% }) %>
-      </section>
-
-      <section class="season-all">
-        <div class="label">
-          <span>All Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
-        </div>
-        <% minerals.gems.map((item , i)=>{ %>
-
-        <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
-          <div class="plant-item">
-            <img src="<%= item.image %>" alt="" />
-
-
-            <div class="plant-detail">
-              <h2><%= item.name %></h2>
-              <span><%= item.detail %></span>
-            </div>
-          </div>
-        </a>
-
-        
-        <% }) %>
-      </section>
-
-      <section class="season-all">
-        <div class="label">
-          <span>All Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
-        </div>
-        <% minerals.geode.map((item , i)=>{ %>
-
-        <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
-          <div class="plant-item">
-            <img src="<%= item.image %>" alt="" />
-
-
-            <div class="plant-detail">
-              <h2><%= item.name %></h2>
-              <span><%= item.detail %></span>
-            </div>
-          </div>
-        </a>
-        <% }) %>
-
-      </section>
-
-      
-
-      <!-- Detail  -->
-      <section class="season-all-detail">
-        <div class="label">
-          <span>All Crop</span> <i class="fa-sharp fa-solid fa-seedling"></i>
-        </div>
 
         <% crops.map((item , i)=>{ %>
         <div class="plant">
@@ -491,9 +272,6 @@
             <div class="plant-detail">
               <h2><%= item.name %></h2>
               <span><%= item.detail %></span>
-              <span>Season : <%= item.data?.season.join(' , ') %></span>
-              <span>Plant : <%= item.data?.totalDays %> Days</span>
-
             </div>
           </div>
       
@@ -501,12 +279,13 @@
                 <% item.data?.phase.map((stage,i) => { %>
                   <div class="plane-phase-item">
                     <img src="<%= stage.image %>" alt="">
-                    <span class="phase-day"> <%= stage.plantDays ? stage.plantDays+" Day" : "Harvest"   %>  </span>
                   </div>
               <% }) %>
             </div>
         </div>
     
+     
+
         <% }) %>
       </section>
 

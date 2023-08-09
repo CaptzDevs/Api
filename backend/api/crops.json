@@ -3,223 +3,2316 @@
         "name": "Blue Jazz",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2f/Blue_Jazz.png",
         "detail": "The flower grows in a sphere to invite as many butterflies as possible.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/95/Jazz_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/95/Jazz_Seeds.png",
+        "data": {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2f/Blue_Jazz.png",
+            "name": "Blue Jazz",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/2/2f/Blue_Jazz.png/24px-Blue_Jazz.png",
+            "sellPrice": {
+                "base": [
+                    50,
+                    62,
+                    75,
+                    100
+                ],
+                "tiller": [
+                    55,
+                    68,
+                    82,
+                    110
+                ]
+            },
+            "detail": "The flower grows in a sphere to invite as many butterflies as possible.",
+            "totalDays": 14,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Blue_Jazz_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/68/Blue_Jazz_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f8/Blue_Jazz_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c5/Blue_Jazz_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7a/Blue_Jazz_Stage_5.png",
+                    "plantDays": 7
+                }
+            ]
+        }
     },
     {
         "name": "Cauliflower",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/a/aa/Cauliflower.png",
         "detail": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/b/bb/Cauliflower_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/b/bb/Cauliflower_Seeds.png",
+        "data": {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/a/aa/Cauliflower.png",
+            "name": "Cauliflower",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/a/aa/Cauliflower.png/24px-Cauliflower.png",
+            "sellPrice": {
+                "base": [
+                    175,
+                    218,
+                    262,
+                    350
+                ],
+                "tiller": [
+                    192,
+                    239,
+                    288,
+                    385
+                ]
+            },
+            "detail": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/45/Cauliflower_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/14/Cauliflower_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e5/Cauliflower_Stage_3.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/16/Cauliflower_Stage_4.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2f/Cauliflower_Stage_5.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d7/Cauliflower_Stage_6.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Coffee Bean",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/3/33/Coffee_Bean.png",
         "detail": "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/3/33/Coffee_Bean.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/3/33/Coffee_Bean.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/3/33/Coffee_Bean.png",
+            "name": "Coffee Bean",
+            "season": [
+                "Spring",
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/3/33/Coffee_Bean.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    15,
+                    18,
+                    22,
+                    30,
+                    150
+                ],
+                "tiller": []
+            },
+            "detail": "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
+            "totalDays": 22,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/43/Coffee_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/25/Coffee_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8a/Coffee_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/af/Coffee_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2f/Coffee_Stage_5.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/90/Coffee_Stage_6.png",
+                    "plantDays": 10
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/1d/Coffee_Stage_7.png",
+                    "plantDays": 2
+                }
+            ]
+        }
     },
     {
         "name": "Garlic",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cc/Garlic.png",
         "detail": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d5/Garlic_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d5/Garlic_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cc/Garlic.png",
+            "name": "Garlic",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/c/cc/Garlic.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    60,
+                    75,
+                    90,
+                    120
+                ],
+                "tiller": [
+                    66,
+                    82,
+                    99,
+                    132
+                ]
+            },
+            "detail": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
+            "totalDays": 8,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5a/Garlic_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/dc/Garlic_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7c/Garlic_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e5/Garlic_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6f/Garlic_Stage_5.png",
+                    "plantDays": 4
+                }
+            ]
+        }
     },
     {
         "name": "Green Bean",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Green_Bean.png",
         "detail": "A juicy little bean with a cool, crisp snap.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/26/Bean_Starter.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/26/Bean_Starter.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Green_Bean.png",
+            "name": "Green Bean",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/5/5c/Green_Bean.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    40,
+                    50,
+                    60,
+                    80
+                ],
+                "tiller": [
+                    44,
+                    55,
+                    66,
+                    88
+                ]
+            },
+            "detail": "A juicy little bean with a cool, crisp snap.",
+            "totalDays": 23,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/bf/Green_Bean_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/50/Green_Bean_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/24/Green_Bean_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/ab/Green_Bean_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/75/Green_Bean_Stage_6.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/28/Green_Bean_Stage_7.png",
+                    "plantDays": 10
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3c/Green_Bean_Stage_8.png",
+                    "plantDays": 3
+                }
+            ]
+        }
     },
     {
         "name": "Kale",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d1/Kale.png",
         "detail": "The waxy leaves are great in soups and stir frys.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/00/Kale_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/00/Kale_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d1/Kale.png",
+            "name": "Kale",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/d/d1/Kale.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    110,
+                    137,
+                    165,
+                    220
+                ],
+                "tiller": [
+                    121,
+                    150,
+                    181,
+                    242
+                ]
+            },
+            "detail": "The waxy leaves are great in soups and stir frys.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/86/Kale_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/59/Kale_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a3/Kale_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b6/Kale_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e9/Kale_Stage_5.png",
+                    "plantDays": 6
+                }
+            ]
+        }
     },
     {
         "name": "Parsnip",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Parsnip.png",
         "detail": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d3/Parsnip_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d3/Parsnip_Seeds.png",
+        "data" :  {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Parsnip.png",
+            "name": "Parsnip",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/d/db/Parsnip.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    35,
+                    43,
+                    52,
+                    70
+                ],
+                "tiller": [
+                    38,
+                    47,
+                    57,
+                    77
+                ]
+            },
+            "detail": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
+            "totalDays": 8,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/66/Parsnip_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b4/Parsnip_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/69/Parsnip_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/19/Parsnip_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/21/Parsnip_Stage_5.png",
+                    "plantDays": 4
+                }
+            ]
+        }
     },
     {
         "name": "Potato",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Potato.png",
         "detail": "A widely cultivated tuber.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/44/Potato_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/44/Potato_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Potato.png",
+            "name": "Potato",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/c/c2/Potato.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    80,
+                    100,
+                    120,
+                    160
+                ],
+                "tiller": [
+                    88,
+                    110,
+                    132,
+                    176
+                ]
+            },
+            "detail": "A widely cultivated tuber.",
+            "totalDays": 6,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a5/Potato_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f0/Potato_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f5/Potato_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0e/Potato_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0f/Potato_Stage_5.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e2/Potato_Stage_6.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Rhubarb",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6e/Rhubarb.png",
         "detail": "The stalks are extremely tart, but make a great dessert when sweetened.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/47/Rhubarb_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/47/Rhubarb_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6e/Rhubarb.png",
+            "name": "Rhubarb",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/6/6e/Rhubarb.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    220,
+                    275,
+                    330,
+                    440
+                ],
+                "tiller": [
+                    242,
+                    302,
+                    363,
+                    484
+                ]
+            },
+            "detail": "The stalks are extremely tart, but make a great dessert when sweetened.",
+            "totalDays": 26,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7d/Rhubarb_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/4c/Rhubarb_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3c/Rhubarb_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6d/Rhubarb_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/4c/Rhubarb_Stage_5.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/48/Rhubarb_Stage_6.png",
+                    "plantDays": 13
+                }
+            ]
+        }
     },
     {
         "name": "Strawberry",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6d/Strawberry.png",
         "detail": "A sweet, juicy favorite with an appealing red color.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/f/f2/Strawberry_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/f/f2/Strawberry_Seeds.png",
+        "data": {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6d/Strawberry.png",
+            "name": "Strawberry",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/6/6d/Strawberry.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    120,
+                    150,
+                    180,
+                    240
+                ],
+                "tiller": [
+                    132,
+                    165,
+                    198,
+                    264
+                ]
+            },
+            "detail": "A sweet, juicy favorite with an appealing red color.",
+            "totalDays": 16,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2c/Strawberry_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7b/Strawberry_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d6/Strawberry_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8e/Strawberry_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/65/Strawberry_Stage_5.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/48/Strawberry_Stage_6.png",
+                    "plantDays": 8
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d6/Strawberry_Stage_7.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Tulip",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cf/Tulip.png",
         "detail": "The most popular spring flower. Has a very faint sweet smell.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/42/Tulip_Bulb.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/4/42/Tulip_Bulb.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cf/Tulip.png",
+            "name": "Tulip",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/c/cf/Tulip.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    30,
+                    37,
+                    45,
+                    60
+                ],
+                "tiller": [
+                    33,
+                    40,
+                    49,
+                    66
+                ]
+            },
+            "detail": "The most popular spring flower. Has a very faint sweet smell.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3e/Tulip_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/bd/Tulip_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/35/Tulip_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/71/Tulip_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b4/Tulip_Stage_6.png",
+                    "plantDays": 6
+                }
+            ]
+        }
+        
     },
     {
         "name": "Unmilled Rice",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png",
         "detail": "Rice in its rawest form. Run this through a mill to increase the value.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/84/Rice_Shoot.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/84/Rice_Shoot.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png",
+            "name": "Unmilled Rice",
+            "season": [
+                "Spring"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/f/fe/Unmilled_Rice.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    30,
+                    37,
+                    45,
+                    60
+                ],
+                "tiller": [
+                    33,
+                    40,
+                    49,
+                    66
+                ]
+            },
+            "detail": "Rice in its rawest form. Run this through a mill to increase the value.",
+            "totalDays": 16,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0f/Unmilled_Rice_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Unmilled_Rice_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6c/Unmilled_Rice_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a8/Unmilled_Rice_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/29/Unmilled_Rice_Stage_5.png",
+                    "plantDays": 8
+                }
+            ]
+        }
     },
     {
         "name": "Blueberry",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9e/Blueberry.png",
         "detail": "A popular berry reported to have many health benefits. The blue skin has the highest nutrient concentration.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/81/Blueberry_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/81/Blueberry_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9e/Blueberry.png",
+            "name": "Blueberry",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/9/9e/Blueberry.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    50,
+                    62,
+                    75,
+                    100
+                ],
+                "tiller": [
+                    55,
+                    68,
+                    82,
+                    110
+                ]
+            },
+            "detail": "A popular berry reported to have many health benefits. The blue skin has the highest nutrient concentration.",
+            "totalDays": 26,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2c/Blueberry_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Blueberry_Stage_2.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/54/Blueberry_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b1/Blueberry_Stage_4.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/69/Blueberry_Stage_5.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/84/Blueberry_Stage_6.png",
+                    "plantDays": 13
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/19/Blueberry_Stage_7.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Corn",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f8/Corn.png",
         "detail": "One of the most popular grains. The sweet, fresh cobs are a summer favorite.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d1/Corn_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/d1/Corn_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f8/Corn.png",
+            "name": "Corn",
+            "season": [
+                "Summer",
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/f/f8/Corn.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    50,
+                    62,
+                    75,
+                    100
+                ],
+                "tiller": [
+                    55,
+                    68,
+                    82,
+                    110
+                ]
+            },
+            "detail": "One of the most popular grains. The sweet, fresh cobs are a summer favorite.",
+            "totalDays": 32,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/57/Corn_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/97/Corn_Stage_2.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Corn_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/11/Corn_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/4d/Corn_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Corn_Stage_6.png",
+                    "plantDays": 14
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/29/Corn_Stage_7.png",
+                    "plantDays": 4
+                }
+            ]
+        }
     },
     {
         "name": "Hops",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/5/59/Hops.png",
         "detail": "A bitter, tangy flower used to flavor beer.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/9b/Hops_Starter.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/9b/Hops_Starter.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/5/59/Hops.png",
+            "name": "Hops",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/5/59/Hops.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    25,
+                    31,
+                    37,
+                    50
+                ],
+                "tiller": [
+                    27,
+                    34,
+                    40,
+                    55
+                ]
+            },
+            "detail": "A bitter, tangy flower used to flavor beer.",
+            "totalDays": 23,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Hops_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5a/Hops_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e4/Hops_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/ff/Hops_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0d/Hops_Stage_6.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fe/Hops_Stage_7.png",
+                    "plantDays": 11
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b0/Hops_Stage_8.png",
+                    "plantDays": 1
+                }
+            ]
+        }
     },
     {
         "name": "Hot Pepper",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f1/Hot_Pepper.png",
         "detail": "Fiery hot with a hint of sweetness.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/6/67/Pepper_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/6/67/Pepper_Seeds.png",
+        "data": {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f1/Hot_Pepper.png",
+            "name": "Hot Pepper",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/f/f1/Hot_Pepper.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    40,
+                    50,
+                    60,
+                    80
+                ],
+                "tiller": [
+                    44,
+                    55,
+                    66,
+                    88
+                ]
+            },
+            "detail": "Fiery hot with a hint of sweetness.",
+            "totalDays": 10,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/18/Hot_Pepper_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/13/Hot_Pepper_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8a/Hot_Pepper_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/85/Hot_Pepper_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/af/Hot_Pepper_Stage_4b.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/96/Hot_Pepper_Stage_5.png",
+                    "plantDays": 5
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/79/Hot_Pepper_Stage_6.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Melon",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/1/19/Melon.png",
         "detail": "A cool, sweet summer treat.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/5e/Melon_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/5e/Melon_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/1/19/Melon.png",
+            "name": "Melon",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/1/19/Melon.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    250,
+                    312,
+                    375,
+                    500
+                ],
+                "tiller": [
+                    275,
+                    343,
+                    412,
+                    550
+                ]
+            },
+            "detail": "A cool, sweet summer treat.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/80/Melon_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/36/Melon_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/aa/Melon_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cf/Melon_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6d/Melon_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d9/Melon_Stage_6.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Poppy",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/3/37/Poppy.png",
         "detail": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/a/a2/Poppy_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/a/a2/Poppy_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/3/37/Poppy.png",
+            "name": "Poppy",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/3/37/Poppy.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    140,
+                    175,
+                    210,
+                    280
+                ],
+                "tiller": [
+                    154,
+                    192,
+                    231,
+                    308
+                ]
+            },
+            "detail": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
+            "totalDays": 14,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/25/Poppy_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a9/Poppy_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/96/Poppy_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/67/Poppy_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/ee/Poppy_Stage_6.png",
+                    "plantDays": 7
+                }
+            ]
+        }
     },
     {
         "name": "Radish",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d5/Radish.png",
         "detail": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/b/b1/Radish_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/b/b1/Radish_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d5/Radish.png",
+            "name": "Radish",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/d/d5/Radish.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    90,
+                    112,
+                    135,
+                    180
+                ],
+                "tiller": [
+                    99,
+                    123,
+                    148,
+                    198
+                ]
+            },
+            "detail": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b7/Radish_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/ce/Radish_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/16/Radish_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/55/Radish_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Radish_Stage_5.png",
+                    "plantDays": 6
+                }
+            ]
+        }
     },
     {
         "name": "Red Cabbage",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2d/Red_Cabbage.png",
         "detail": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Red_Cabbage_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Red_Cabbage_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2d/Red_Cabbage.png",
+            "name": "Red Cabbage",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/2/2d/Red_Cabbage.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    260,
+                    325,
+                    390,
+                    520
+                ],
+                "tiller": [
+                    286,
+                    357,
+                    429,
+                    572
+                ]
+            },
+            "detail": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
+            "totalDays": 18,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/df/Red_Cabbage_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8d/Red_Cabbage_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3d/Red_Cabbage_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b9/Red_Cabbage_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0d/Red_Cabbage_Stage_5.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8a/Red_Cabbage_Stage_6.png",
+                    "plantDays": 9
+                }
+            ]
+        }
     },
     {
         "name": "Starfruit",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Starfruit.png",
         "detail": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e0/Starfruit_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e0/Starfruit_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/d/db/Starfruit.png",
+            "name": "Starfruit",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/d/db/Starfruit.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    750,
+                    937,
+                    null,
+                    null
+                ],
+                "tiller": [
+                    825,
+                    null,
+                    null,
+                    null
+                ]
+            },
+            "detail": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
+            "totalDays": 26,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cf/Starfruit_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/03/Starfruit_Stage_2.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c1/Starfruit_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/bf/Starfruit_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f6/Starfruit_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c4/Starfruit_Stage_6.png",
+                    "plantDays": 13
+                }
+            ]
+        }
     },
     {
         "name": "Summer Spangle",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9f/Summer_Spangle.png",
         "detail": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/85/Spangle_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/85/Spangle_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9f/Summer_Spangle.png",
+            "name": "Summer Spangle",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/9/9f/Summer_Spangle.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    90,
+                    112,
+                    135,
+                    180
+                ],
+                "tiller": [
+                    99,
+                    123,
+                    148,
+                    198
+                ]
+            },
+            "detail": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
+            "totalDays": 16,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Summer_Spangle_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/eb/Summer_Spangle_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/79/Summer_Spangle_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7a/Summer_Spangle_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/06/Summer_Spangle_Stage_5.png",
+                    "plantDays": 8
+                }
+            ]
+        }
     },
     {
         "name": "Sunflower",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/8/81/Sunflower.png",
         "detail": "A common misconception is that the flower turns so it's always facing the sun.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/1f/Sunflower_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/1f/Sunflower_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/8/81/Sunflower.png",
+            "name": "Sunflower",
+            "season": [
+                "Summer",
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/8/81/Sunflower.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    80,
+                    100,
+                    120,
+                    160
+                ],
+                "tiller": [
+                    88,
+                    110,
+                    132,
+                    176
+                ]
+            },
+            "detail": "A common misconception is that the flower turns so it's always facing the sun.",
+            "totalDays": 8,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/21/Sunflower_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/08/Sunflower_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/49/Sunflower_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/30/Sunflower_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/ed/Sunflower_Stage_5.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Tomato",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Tomato.png",
         "detail": "Rich and slightly tangy, the Tomato has a wide variety of culinary uses.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e3/Tomato_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e3/Tomato_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Tomato.png",
+            "name": "Tomato",
+            "season": [
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/9/9d/Tomato.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    60,
+                    75,
+                    90,
+                    120
+                ],
+                "tiller": [
+                    66,
+                    82,
+                    99,
+                    132
+                ]
+            },
+            "detail": "Rich and slightly tangy, the Tomato has a wide variety of culinary uses.",
+            "totalDays": 22,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/1f/Tomato_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7d/Tomato_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e7/Tomato_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6d/Tomato_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Tomato_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/bb/Tomato_Stage_6.png",
+                    "plantDays": 11
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/56/Tomato_Stage_7.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Wheat",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e2/Wheat.png",
         "detail": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/2b/Wheat_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/2b/Wheat_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e2/Wheat.png",
+            "name": "Wheat",
+            "season": [
+                "Summer",
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/e/e2/Wheat.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    25,
+                    31,
+                    37,
+                    50
+                ],
+                "tiller": [
+                    27,
+                    34,
+                    40,
+                    55
+                ]
+            },
+            "detail": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
+            "totalDays": 4,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f9/Wheat_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/4b/Wheat_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/34/Wheat_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/64/Wheat_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f5/Wheat_Stage_5.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Amaranth",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f6/Amaranth.png",
         "detail": "A purple grain cultivated by an ancient civilization.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Amaranth_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Amaranth_Seeds.png",
+        "data":{
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f6/Amaranth.png",
+            "name": "Amaranth",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/f/f6/Amaranth.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    150,
+                    187,
+                    225,
+                    300
+                ],
+                "tiller": [
+                    165,
+                    205,
+                    247,
+                    330
+                ]
+            },
+            "detail": "A purple grain cultivated by an ancient civilization.",
+            "totalDays": 14,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Amaranth_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/73/Amaranth_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Amaranth_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/41/Amaranth_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/74/Amaranth_Stage_5.png",
+                    "plantDays": 7
+                }
+            ]
+        }
     },
     {
         "name": "Artichoke",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/d/dd/Artichoke.png",
         "detail": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/7/71/Artichoke_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/7/71/Artichoke_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/d/dd/Artichoke.png",
+            "name": "Artichoke",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/d/dd/Artichoke.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    160,
+                    200,
+                    240,
+                    320
+                ],
+                "tiller": [
+                    176,
+                    220,
+                    264,
+                    352
+                ]
+            },
+            "detail": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
+            "totalDays": 16,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b0/Artichoke_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0a/Artichoke_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/29/Artichoke_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/2b/Artichoke_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d4/Artichoke_Stage_5.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/0b/Artichoke_Stage_6.png",
+                    "plantDays": 8
+                }
+            ]
+        }
     },
     {
         "name": "Beet",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a4/Beet.png",
         "detail": "A sweet and earthy root vegatable. As a bonus, the leaves make a great salad.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/a/a8/Beet_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/a/a8/Beet_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a4/Beet.png",
+            "name": "Beet",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/a/a4/Beet.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    100,
+                    125,
+                    150,
+                    200
+                ],
+                "tiller": [
+                    110,
+                    137,
+                    165,
+                    220
+                ]
+            },
+            "detail": "A sweet and earthy root vegatable. As a bonus, the leaves make a great salad.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/30/Beet_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6a/Beet_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/1a/Beet_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/54/Beet_Stage_4.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/7c/Beet_Stage_5.png",
+                    "plantDays": 6
+                }
+            ]
+        }
     },
     {
         "name": "Bok Choy",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/4/40/Bok_Choy.png",
         "detail": "The leafy greens and fibrous stalks are healthy and delicious.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/21/Bok_Choy_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/2/21/Bok_Choy_Seeds.png",
+        "data": {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/4/40/Bok_Choy.png",
+            "name": "Bok Choy",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/4/40/Bok_Choy.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    80,
+                    100,
+                    120,
+                    160
+                ],
+                "tiller": [
+                    88,
+                    110,
+                    132,
+                    176
+                ]
+            },
+            "detail": "The leafy greens and fibrous stalks are healthy and delicious.",
+            "totalDays": 8,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3d/Bok_Choy_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/00/Bok_Choy_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/88/Bok_Choy_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c7/Bok_Choy_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/50/Bok_Choy_Stage_5.png",
+                    "plantDays": 4
+                }
+            ]
+        }
     },
     {
         "name": "Cranberries",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6e/Cranberries.png",
         "detail": "These tart red berries are a traditional winter food.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Cranberry_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Cranberry_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6e/Cranberries.png",
+            "name": "Cranberries",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/6/6e/Cranberries.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    75,
+                    93,
+                    112,
+                    150
+                ],
+                "tiller": [
+                    82,
+                    102,
+                    123,
+                    165
+                ]
+            },
+            "detail": "These tart red berries are a traditional winter food.",
+            "totalDays": 19,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/ae/Cranberry_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b8/Cranberry_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/16/Cranberry_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/57/Cranberry_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c3/Cranberry_Stage_5.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5a/Cranberry_Stage_6.png",
+                    "plantDays": 7
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/ac/Cranberry_Stage_7.png",
+                    "plantDays": 5
+                }
+            ]
+        }
     },
     {
         "name": "Eggplant",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8f/Eggplant.png",
         "detail": "A rich and wholesome relative of the tomato. Delicious fried or stewed.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/f/f9/Eggplant_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/f/f9/Eggplant_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8f/Eggplant.png",
+            "name": "Eggplant",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/8/8f/Eggplant.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    60,
+                    75,
+                    90,
+                    120
+                ],
+                "tiller": [
+                    66,
+                    82,
+                    99,
+                    132
+                ]
+            },
+            "detail": "A rich and wholesome relative of the tomato. Delicious fried or stewed.",
+            "totalDays": 15,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/97/Eggplant_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Eggplant_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d6/Eggplant_Stage_3.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a1/Eggplant_Stage_4.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Eggplant_Stage_5.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/17/Eggplant_Stage_6.png",
+                    "plantDays": 5
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/55/Eggplant_Stage_7.png",
+                    "plantDays": 5
+                }
+            ]
+        }
     },
     {
         "name": "Fairy Rose",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Fairy_Rose.png",
         "detail": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/8e/Fairy_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/8/8e/Fairy_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Fairy_Rose.png",
+            "name": "Fairy Rose",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/5/5c/Fairy_Rose.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    290,
+                    362,
+                    435,
+                    580
+                ],
+                "tiller": [
+                    319,
+                    398,
+                    478,
+                    638
+                ]
+            },
+            "detail": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
+            "totalDays": 12,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/52/Fairy_Rose_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/05/Fairy_Rose_Stage_2.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/09/Fairy_Rose_Stage_3.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d4/Fairy_Rose_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/43/Fairy_Rose_Stage_5.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Grape",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Grape.png",
         "detail": "A sweet cluster of fruit.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/de/Grape_Starter.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/d/de/Grape_Starter.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c2/Grape.png",
+            "name": "Grape",
+            "season": [
+                "Summer",
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/c/c2/Grape.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    38,
+                    53,
+                    68,
+                    98
+                ],
+                "tiller": []
+            },
+            "detail": "A sweet cluster of fruit.",
+            "totalDays": 20,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/be/Grape_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9f/Grape_Stage_2.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fa/Grape_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/e7/Grape_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/ea/Grape_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/12/Grape_Stage_6.png",
+                    "plantDays": 10
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/54/Grape_Stage_7.png",
+                    "harvest": true
+                }
+            ]
+        }
     },
     {
         "name": "Pumpkin",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/6/64/Pumpkin.png",
         "detail": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/99/Pumpkin_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/9/99/Pumpkin_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/6/64/Pumpkin.png",
+            "name": "Pumpkin",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/6/64/Pumpkin.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    320,
+                    400,
+                    480,
+                    640
+                ],
+                "tiller": [
+                    352,
+                    440,
+                    528,
+                    704
+                ]
+            },
+            "detail": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
+            "totalDays": 26,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/09/Pumpkin_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/1b/Pumpkin_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cf/Pumpkin_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/ab/Pumpkin_Stage_4.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/dd/Pumpkin_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Pumpkin_Stage_6.png",
+                    "plantDays": 13
+                }
+            ]
+        }
     },
     {
         "name": "Yam",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/5/52/Yam.png",
         "detail": "A starchy tuber with a lot of culinary versatility.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e9/Yam_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/e9/Yam_Seeds.png",   
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/5/52/Yam.png",
+            "name": "Yam",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/5/52/Yam.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    160,
+                    200,
+                    240,
+                    320
+                ],
+                "tiller": [
+                    176,
+                    220,
+                    264,
+                    352
+                ]
+            },
+            "detail": "A starchy tuber with a lot of culinary versatility.",
+            "totalDays": 20,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/d/d4/Yam_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5c/Yam_Stage_2.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/c7/Yam_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9d/Yam_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/64/Yam_Stage_5.png",
+                    "plantDays": 10
+                }
+            ]
+        }
     },
     {
         "name": "Ancient Fruit",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Ancient_Fruit.png",
         "detail": "It's been dormant for eons.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Ancient_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/e/ec/Ancient_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Ancient_Fruit.png",
+            "name": "Ancient Fruit",
+            "season": [
+                "Spring",
+                "Summer",
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/0/01/Ancient_Fruit.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    550,
+                    687,
+                    825,
+                    null
+                ],
+                "tiller": [
+                    605,
+                    755,
+                    907,
+                    null
+                ]
+            },
+            "detail": "It's been dormant for eons.",
+            "totalDays": 63,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/7/77/Ancient_Fruit_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/1/18/Ancient_Fruit_Stage_2.png",
+                    "plantDays": 7
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/4a/Ancient_Fruit_Stage_3.png",
+                    "plantDays": 7
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/49/Ancient_Fruit_Stage_4.png",
+                    "plantDays": 7
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/6/6a/Ancient_Fruit_Stage_5.png",
+                    "plantDays": 5
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5a/Ancient_Fruit_Stage_6.png",
+                    "plantDays": 28
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/ca/Ancient_Fruit_Stage_7.png",
+                    "plantDays": 7
+                }
+            ]
+        }
     },
     {
         "name": "Cactus Fruit",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Cactus_Fruit.png",
         "detail": "The sweet fruit of the prickly pear cactus.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/09/Cactus_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/0/09/Cactus_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Cactus_Fruit.png",
+            "name": "Cactus Fruit",
+            "season": [
+                "All"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/3/32/Cactus_Fruit.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    75,
+                    93,
+                    112,
+                    150
+                ],
+                "tiller": [
+                    82,
+                    102,
+                    123,
+                    165
+                ]
+            },
+            "detail": "The sweet fruit of the prickly pear cactus.",
+            "totalDays": 27,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/32/Cactus_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8b/Cactus_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/e/ed/Cactus_Stage_3.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/c/cc/Cactus_Stage_4.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3d/Cactus_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/4c/Cactus_Stage_6.png",
+                    "plantDays": 12
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b0/Cactus_Stage_7.png",
+                    "plantDays": 3
+                }
+            ]
+        }
     },
     {
         "name": "Fiber",
@@ -237,24 +2330,242 @@
         "name": "Pineapple",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fb/Pineapple.png",
         "detail": "A sweet and tangy tropical treat.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/17/Pineapple_Seeds.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/17/Pineapple_Seeds.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/f/fb/Pineapple.png",
+            "name": "Pineapple",
+            "season": [
+                "All",
+                "Ginger Island",
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/f/fb/Pineapple.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    300,
+                    375,
+                    450,
+                    600
+                ],
+                "tiller": [
+                    330,
+                    412,
+                    495,
+                    660
+                ]
+            },
+            "detail": "A sweet and tangy tropical treat.",
+            "totalDays": 35,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/3b/Pineapple_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/85/Pineapple_Stage_2.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/83/Pineapple_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/20/Pineapple_Stage_4.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/3/34/Pineapple_Stage_5.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/06/Pineapple_Stage_6.png",
+                    "plantDays": 14
+                },
+                {
+                    "stage": 7,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/9b/Pineapple_Stage_7.png",
+                    "plantDays": 7
+                }
+            ]
+        }
     },
     {
         "name": "Taro Root",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Taro_Root.png",
         "detail": "This starchy root is one of the most ancient crops.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/57/Taro_Tuber.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/57/Taro_Tuber.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/0/01/Taro_Root.png",
+            "name": "Taro Root",
+            "season": [
+                "All",
+                "Ginger Island",
+                "Summer"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/0/01/Taro_Root.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    100,
+                    125,
+                    150,
+                    200
+                ],
+                "tiller": [
+                    110,
+                    137,
+                    165,
+                    220
+                ]
+            },
+            "detail": "This starchy root is one of the most ancient crops.",
+            "totalDays": 20,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/4/45/Taro_Stage_1.png",
+                    "plantDays": 1
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/98/Taro_Stage_2.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/58/Taro_Stage_3.png",
+                    "plantDays": 3
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/94/Taro_Stage_4.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/98/Taro_Stage_5.png",
+                    "plantDays": 10
+                }
+            ]
+        }
     },
     {
         "name": "Sweet Gem Berry",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/8/88/Sweet_Gem_Berry.png",
         "detail": "It's by far the sweetest thing you've ever smelled.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/5b/Rare_Seed.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/5/5b/Rare_Seed.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/8/88/Sweet_Gem_Berry.png",
+            "name": "Sweet Gem Berry",
+            "season": [
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/8/88/Sweet_Gem_Berry.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    3000,
+                    3750,
+                    4500,
+                    6000
+                ],
+                "tiller": []
+            },
+            "detail": "It's by far the sweetest thing you've ever smelled.",
+            "totalDays": 48,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/0/09/Sweet_Gem_Berry_Stage_1.png",
+                    "plantDays": 2
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/b0/Sweet_Gem_Berry_Stage_2.png",
+                    "plantDays": 4
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/2/26/Sweet_Gem_Berry_Stage_3.png",
+                    "plantDays": 6
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/8/8f/Sweet_Gem_Berry_Stage_4.png",
+                    "plantDays": 6
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/9/93/Sweet_Gem_Berry_Stage_5.png",
+                    "plantDays": 6
+                },
+                {
+                    "stage": 6,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/f/f0/Sweet_Gem_Berry_Stage_6.png",
+                    "plantDays": 24
+                }
+            ]
+        }
     },
     {
         "name": "Tea Leaves",
         "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5b/Tea_Leaves.png",
         "detail": "The young leaves of the tea plant. Can be brewed into the popular, energizing beverage.",
-        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/12/Tea_Sapling.png"
+        "seeds": "https://stardewcommunitywiki.com/mediawiki/images/1/12/Tea_Sapling.png",
+        "data" : {
+            "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5b/Tea_Leaves.png",
+            "name": "Tea Leaves",
+            "season": [
+                "Spring",
+                "Summer",
+                "Fall"
+            ],
+            "seedPrice": 0,
+            "icon": "https://stardewcommunitywiki.com/mediawiki/images/thumb/5/5b/Tea_Leaves.png/24px-Coffee_Bean.png",
+            "sellPrice": {
+                "base": [
+                    50
+                ],
+                "tiller": [
+                    55
+                ]
+            },
+            "detail": "The young leaves of the tea plant. Can be brewed into the popular, energizing beverage.",
+            "totalDays": 62,
+            "phase": [
+                {
+                    "stage": 1,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/aa/Tea_Stage_1.png",
+                    "plantDays": 10
+                },
+                {
+                    "stage": 2,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/5/5e/Tea_Stage_2.png",
+                    "plantDays": 10
+                },
+                {
+                    "stage": 3,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a8/Tea_Stage_3.png",
+                    "plantDays": 21
+                },
+                {
+                    "stage": 4,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/b/bf/Tea_Stage_4.png",
+                    "plantDays": 20
+                },
+                {
+                    "stage": 5,
+                    "image": "https://stardewcommunitywiki.com/mediawiki/images/a/a8/Tea_Stage_3.png",
+                    "plantDays": 1
+                }
+            ]
+        }
     }
 ]

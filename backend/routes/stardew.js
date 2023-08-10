@@ -265,6 +265,7 @@ async function getAllMineral(){
 }
 
 
+
 async function getAllFishs(){
     let url = 'https://stardewvalleywiki.com/Fish';
  

@@ -412,7 +412,7 @@
 
       <section class="season-all">
         <div class="label">
-          <span>All Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
+          <span>Foraged Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
         </div>
         <% minerals.foraged.map((item , i)=>{ %>
 
@@ -434,7 +434,7 @@
 
       <section class="season-all">
         <div class="label">
-          <span>All Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
+          <span>Gems</span> <i class="fa-sharp fa-solid fa-seedling"></i>
         </div>
         <% minerals.gems.map((item , i)=>{ %>
 
@@ -456,7 +456,7 @@
 
       <section class="season-all">
         <div class="label">
-          <span>All Minerals</span> <i class="fa-sharp fa-solid fa-seedling"></i>
+          <span>Geode</span> <i class="fa-sharp fa-solid fa-seedling"></i>
         </div>
         <% minerals.geode.map((item , i)=>{ %>
 
@@ -475,6 +475,66 @@
 
       </section>
 
+      <!-- FISH -->
+      <section class="season-all">
+        <div class="label">
+          <span>All Fish</span> <i class="fa-sharp fa-solid fa-seedling"></i>
+        </div>
+        <% fishs.fish.map((item , i)=>{ %>
+
+        <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
+          <div class="plant-item">
+            <img src="<%= item.image %>" alt="" />
+
+
+            <div class="plant-detail">
+              <h2><%= item.name %></h2>
+              <span><%= item.detail %></span>
+            </div>
+          </div>
+        </a>
+        <% }) %>
+      </section>
+
+
+    <!-- FISH -->
+      <section class="season-all">
+       <div class="label">
+         <span>All Fish</span> <i class="fa-sharp fa-solid fa-seedling"></i>
+       </div>
+       <% fishs.legendary.map((item , i)=>{ %>
+       <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
+         <div class="plant-item">
+           <img src="<%= item.image %>" alt="" />
+           <div class="plant-detail">
+             <h2><%= item.name %></h2>
+             <span><%= item.detail %></span>
+           </div>
+         </div>
+       </a>
+       <% }) %>
+
+     </section>
+
+
+         <!-- FISH -->
+         <section class="season-all">
+          <div class="label">
+            <span>All Fish</span> <i class="fa-sharp fa-solid fa-seedling"></i>
+          </div>
+          <% fishs.legendary2.map((item , i)=>{ %>
+          <a href="https://stardewvalleywiki.com/<%= item.name %>" target="_blank" class="plant">
+            <div class="plant-item">
+              <img src="<%= item.image %>" alt="" />
+              <div class="plant-detail">
+                <h2><%= item.name %></h2>
+                <span><%= item.detail %></span>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+   
+        </section>
       
 
       <!-- Detail  -->

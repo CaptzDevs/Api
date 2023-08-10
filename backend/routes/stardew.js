@@ -264,6 +264,171 @@ async function getAllMineral(){
     })
 }
 
+
+async function getAllFishs(){
+    let url = 'https://stardewvalleywiki.com/Fish';
+ 
+     return axios.get(url).then(response =>{
+ 
+          const html = response.data;
+          let $ = cheerio.load(html);
+         
+          let data = {};
+          let dataTable = [19,22,29,33]
+          let count = 0;
+          let type_arr = ['fish','night_market','legendary','legendary2']
+
+        dataTable.forEach((tableIndex,i)=>{
+
+         count++;
+
+          let name  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr > td:nth-child(2) > a`)
+          .map((i, item) => {
+             let data = {}
+             let dataPrice = []
+            data.name = $(item).text()
+
+            let sellPrice  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr:nth-child(${i+2})  > td:nth-child(4) > table > tbody > tr > td:nth-child(2)`)
+            .map((i, item) => {
+                return parseInt($(item).text().replace('g','').replace(/,/g, ''), 10)
+            }
+            
+            )
+            .toArray();
+
+            let sellPricePros  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr:nth-child(${i+2})  > td:nth-child(5) > table > tbody > tr > td:nth-child(2)`)
+            .map((i, item) => {
+                return parseInt($(item).text().replace('g','').replace(/,/g, ''), 10)
+            }
+            
+            )
+            .toArray();
+
+            let sellPriceAngler  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr:nth-child(${i+2})  > td:nth-child(6) > table > tbody > tr > td:nth-child(2)`)
+            .map((i, item) => {
+                return parseInt($(item).text().replace('g','').replace(/,/g, ''), 10)
+            }
+            
+            )
+            .toArray();
+
+            let season  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr:nth-child(${i+2}) > td:nth-child(9) > span > a`)
+            .map((i, item) => {
+  
+                 return  $(item).text() 
+            }
+            
+            )
+            .toArray();
+
+
+
+            data.price = sellPrice
+            data.pricePros = sellPricePros
+            data.priceAngler = sellPriceAngler
+            data.season = season
+
+
+
+             return data
+          }
+          
+          )
+          .toArray();
+ 
+          let image  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr > td:nth-child(1) > div > div > a > img`)
+          .map((i, item) => {
+             let data = {
+                 image : 'https://stardewcommunitywiki.com'+item.attribs['src'],
+             }
+             
+             return data
+          }
+          
+          )
+          .toArray();
+ 
+ 
+          let detail = $(` #mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr > td:nth-child(3)`)
+          .map((i, item) => {
+             let data = {
+                 detail : $(item).text().trim(),
+             }
+             
+             return data
+          }
+          
+          )
+          .toArray();
+
+
+          let location  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr > td:nth-child(7)`)
+          .map((i, item) => {
+            let str = ''
+                if(item.children[0].tagName == 'a'){
+                    str += $(item).text()
+                }
+                else if(item.children[1]?.tagName == 'a'){
+                    str += $(item).text()
+                }
+                else if(item.children[2]?.tagName == 'a'){
+                    str += $(item).text() 
+                }else{
+                    str += $(item).html() 
+
+                }
+
+               return str
+          }
+          
+          )
+          .toArray();
+
+          let time  = $(`#mw-content-text > div > table:nth-child(${tableIndex}) > tbody > tr > td:nth-child(8)`)
+          .map((i, item) => {
+              return  $(item).html()
+          }
+          
+          )
+          .toArray();
+
+          
+     
+          
+          
+          let items = [];
+        
+          for (let i = 0; i < name.length; i++) {
+             let itemData = {
+                 name: name[i].name,
+                 image: image[i].image,
+                 detail: detail[i].detail,
+                 price : name[i].price,
+                 pricePros : name[i].pricePros,
+                 priceAngler : name[i].priceAngler,
+                 location : location[i].replace('\n','').replace(" and",',Ginger Island').replace(/<br>/g,' , '),
+                 time : time[i].replace('\n','').split('<br>'),
+
+                 season : name[i].season.length == 0 ? ['All Season'] : name[i].season,
+
+
+             };
+    
+             items.push(itemData);
+         }
+
+ 
+         data[type_arr[i]] = items
+    })
+
+        console.log(data.fish)
+ 
+      return data
+     })
+ }
+
+
+
 router.all("/*", (req, res, next) => checkAuth(req, res, next));
 
 
@@ -272,8 +437,10 @@ router.get("/",async (req, res) => {
     
     const cropData  = await getAllCropData();
     const mineralData = await getAllMineral()
+    const fishData = await  getAllFishs()
     const springData =  cropData.filter(item => item.data?.season.includes('Spring'));
     data['minerals'] = mineralData
+    data['fishs'] = fishData
     data['season'] = ['spring',"summer","fall",'winter']
     data['crops']  = cropData
     data['cropSpring']  = springData

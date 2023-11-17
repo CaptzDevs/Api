@@ -41,34 +41,190 @@ async function scrapeCoin() {
     return coinData
 }
 
-async function scrapeIG() {
+
+function delay(time) {
+  return new Promise(function(resolve) { 
+      setTimeout(resolve, time)
+  });
+}
+
+async function getInstagramInfo(url) {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  const screenshot = 'webscreen.jpg';
+
+  try {
+    // Navigate to the Instagram page
+    await page.goto(url, { waitUntil: 'networkidle2' });
+
+    // Wait for some time to ensure dynamic content is loaded (you may need to adjust this)
+    console.log(`Go to ${url}`)
+    console.log("Fetching")
+
+    // Extract favicon
+
+   const faviconUrl = await page.waitForSelector('link[rel="icon"], link[rel="shortcut icon"]')
+    .then(elem => page.evaluate(el => el.href, elem))
+    .then(data => {
+      console.log('Favicon URL:', data);
+      return data;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      return "";
+
+    });
+
+
+    const description = await page.waitForSelector('meta[property="og:description"], meta[property="description"]')
+    .then(elem => page.evaluate(el => el.content, elem))
+    .then(data => {
+      console.log('description', data);
+      return data;
+
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      return "";
+
+    });
+
+
+    const title = await page.waitForSelector('meta[property="og:title"], meta[property="title"]')
+    .then(elem => page.evaluate(el => el.content, elem))
+    .then(data => {
+      console.log('title', data);
+      return data;
+
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      return "";
+
+    });
+
+
+    const pageUrl = await page.waitForSelector('meta[property="og:url"], meta[property="url"]')
+    .then(elem => page.evaluate(el => el.content, elem))
+    .then(data => {
+      console.log('url', data);
+      return data;
+
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      return "";
+
+    });
+    
+    
 
 
 
+    const profileImage = await page.waitForSelector('meta[property="og:image"], meta[property="image"]')
+    .then(elem => page.evaluate(el => el.content, elem))
+    .then(data => {
+      console.log('profileImage', data);
+      return data;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      return "";
+    });
+
+
+    await page.screenshot({ path: screenshot })
+
+/*     await delay(15000)
+    // Extract profile information
+    const profileInfo = await page.evaluate(() => {
+      const username = document.querySelector('header section h1').innerText;
+      const bio = document.querySelector('header section div span').innerText;
+      const profileImage = document.querySelector('header img').src;
+
+      return { username, bio, profileImage };
+    }); */
+
+    profileInfo['image'] = profileImage
+
+    return { profileInfo , faviconUrl, description,title ,pageUrl}; 
+  } catch (error) {
+    console.error('Error:', error);
+    return null;
+  } finally {
+    await browser.close();
+  }
 }
 
 
 router.get('/ig', async (req,res)=>{ 
-  let query = req.query
-  let limit = query.limit || 15
-
-  const browser = await puppeteer.launch({})
-
-  const page = await browser.newPage()
-
-  setTimeout(async () => {
-    await page.goto('https://www.instagram.com/p/CpNOmFGhTkY/')
-
-    let img  =  await page.$$eval(`#mount_0_0_NN > div > div > div:nth-child(2) > div > div > div.x9f619.x1n2onr6.x1ja2u2z > div > div.x1uvtmcs.x4k7w5x.x1h91t0o.x1beo9mf.xaigb6o.x12ejxvf.x3igimt.xarpa2k.xedcshv.x1lytzrv.x1t2pt76.x7ja8zs.x1n2onr6.x1qrby5j.x1jfb8zj > div`, elements => elements.map(el => el.src)); 
-    
-    console.log(img)
-    browser.close()
-
-    res.send(img)
-  }, 15000);
+    const instagramUrl = 'https://www.instagram.com/captain.swk/';
   
-})
+    try {
+      const info = await getInstagramInfo(instagramUrl);
+      console.log("---------------------")
+      console.log(info);
+      console.log("---------------------")
+      res.json(info);
+    } catch (error) {
+      console.error('Error:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  });
+  
 
+  /**
+ * @name Instagram
+ *
+ * @desc Logs into Instagram with credentials. Provide your username and password as environment variables when running the script, i.e:
+ * `INSTAGRAM_USER=myuser INSTAGRAM_PWD=mypassword node instagram.js`
+ *
+ */
+router.get("igLogin",async (req,res)=>{
+  const screenshot = 'instagram.png';
+(async () => {
+  const browser = await puppeteer.launch({
+    headless: false
+  })
+  const page = await browser.newPage()
+  await page.goto('https://www.instagram.com/accounts/login/?source=auth_switcher', {
+    waitUntil: 'networkidle2'
+  })
+
+  // email
+  await page.waitForSelector("[name='username']")
+  // await page.click("[name='username']");
+  await page.type("[name='username']", 'while_sky')
+
+  // password
+  await page.keyboard.down('Tab')
+  // uncomment the following if you want the passwor dto be visible
+  // page.$eval("._2hvTZ.pexuQ.zyHYP[type='password']", (el) => el.setAttribute("type", "text"));
+  await page.keyboard.type("onsky075")
+
+  // the selector of the "Login" button
+  /*  await page.click("._0mzm-.sqdOP.L3NKy>.Igw0E.IwRSH.eGOV_._4EzTm"); */
+
+  // we find the Login btn using the innerText comparison because the selector used for the btn might be unstable
+  await page.evaluate(() => {
+    document.querySelectorAll('button').forEach(function (btn) {
+        if (btn.innerText === 'Log in') { 
+            btn.click();
+        }
+    });
+});
+
+
+  await page.waitForSelector('.glyphsSpriteMobile_nav_type_logo')
+
+  await page.screenshot({ path: screenshot })
+
+  browser.close()
+  console.log('See screenshot: ' + screenshot)
+})()
+
+})
+  
 
 
 router.get('/twitter', async (req,res)=>{ 
@@ -123,6 +279,8 @@ router.get('/coin/json', async (req,res)=>{
 
 
 router.get("/BillboardTop100/",async (req,res)=>{
+
+  
 
   let SongData = await axios.get('/api/billboardTop100/json').then(res=>{
       return res.data

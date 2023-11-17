@@ -184,6 +184,39 @@ router.get('/print',(req,res)=>{
   }
 })
 
+function delay(time) {
+  return new Promise(function(resolve) { 
+      setTimeout(resolve, time)
+  });
+}
+
+router.get("/catchApi",(req,res)=>{
+
+    (async () => {
+      const browser = await puppeteer.launch();
+      const page = await browser.newPage();
+    
+      page.on('request', (request) => {
+        const url = request.url();
+        
+     
+        if (url.startsWith('https://instagram.fhdy1-1.fna.fbcdn.net')) {
+          console.log('Request URL:', url);
+          console.log("------------------------");
+        }
+      });
+    
+      await page.goto('https://www.instagram.com/lmwinter.x/');
+      // Navigate to the desired website or perform other actions
+    
+      // Close the browser when done
+      await page.waitForResponse('https://instagram.fhdy1-1.fna.fbcdn.net')
+
+      await browser.close();
+    })();
+  
+})
+
 
 
 

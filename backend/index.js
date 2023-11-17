@@ -47,7 +47,8 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use(cors({origin : ["http://localhost:3000",'http://192.168.137.1:3000']}));
+app.use(cors());
+/* app.use(cors({origin : ["http://localhost:3000",'http://192.168.137.1:3000','http://127.0.0.1:5501']})); */
 
 app.use('/',viewRoute)
 app.use('/test',testRoute)

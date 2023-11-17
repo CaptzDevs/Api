@@ -101,7 +101,7 @@ async function getSchedule(option = {semester : UserScheduleConfig.semester, yea
         if(optionValue){
 
 
-
+            
         await page.select('#ctl00_ctl00_mainContent_PageContent_UcTermYearSelector1_ddlTermYear', `${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
             
         let btn_showSchedule = await page.$("#ctl00_ctl00_mainContent_PageContent_btnShow");
@@ -110,19 +110,15 @@ async function getSchedule(option = {semester : UserScheduleConfig.semester, yea
         await page.waitForSelector("#ctl00_ctl00_mainContent_PageContent_lbStudentFullName");
 
 
-    
-      
-
         browser.close();
 
-        console.log("✅ Finish");
+        console.log("✅ Get Data Finish");
         
         resolve(await page.content());
     }else{
         console.log(`❌ No Subject Registered On ${UserScheduleConfig.semester}/${UserScheduleConfig.year}`)
         
         resolve({error:'No Subject Registered'});
-
     }
       })
   

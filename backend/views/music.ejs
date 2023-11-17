@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Billboard Top 100</title>
 </head>
 <style>
     *{
@@ -61,14 +61,14 @@
     <main>
         <section class="music-section">
             <% data.map((item,i)=>{ %>
-            <div class="music-item">
+            <a class="music-item" target="_blank" href="https://www.youtube.com/results?search_query=<%= item.song  %>">
                 <div class="music-rank"><%= item.rank %></div>
                 <img src="<%= item.img %>" alt="" srcset="">
                 <div class="music-item-body">
                     <span class="music-song">  <%= item.song  %></span>
                     <span class="music-artist">  <%= item.artist %></span>
                 </div>
-            </div>
+            </a>
             <% }) %>
         </section>
 </main>

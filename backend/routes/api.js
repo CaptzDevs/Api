@@ -194,13 +194,13 @@ router.get("igLogin",async (req,res)=>{
   // email
   await page.waitForSelector("[name='username']")
   // await page.click("[name='username']");
-  await page.type("[name='username']", 'while_sky')
+  await page.type("[name='username']", '')
 
   // password
   await page.keyboard.down('Tab')
   // uncomment the following if you want the passwor dto be visible
   // page.$eval("._2hvTZ.pexuQ.zyHYP[type='password']", (el) => el.setAttribute("type", "text"));
-  await page.keyboard.type("onsky075")
+  await page.keyboard.type("")
 
   // the selector of the "Login" button
   /*  await page.click("._0mzm-.sqdOP.L3NKy>.Igw0E.IwRSH.eGOV_._4EzTm"); */

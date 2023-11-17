@@ -191,6 +191,8 @@ router.get("igLogin",async (req,res)=>{
     waitUntil: 'networkidle2'
   })
 
+  
+
   // email
   await page.waitForSelector("[name='username']")
   // await page.click("[name='username']");

@@ -24,7 +24,7 @@ function delay(time) {
     username : '6610210505',
     password : 'captzswk1.',
     year : 2566,
-    semester : 1,
+    semester : 2,
  }
 
  const WebConfig = {
@@ -138,7 +138,7 @@ router.post('/data', async (req,res)=>{
     if(req.body.key == '555'){
         let tableFile = ''
         const filename = `cache_${UserScheduleConfig.username}_${UserScheduleConfig.semester}_${UserScheduleConfig.year}_schedule.json`
-        const filepath = path.join(process.env.project_path,'/cache',filename)
+        const filepath = path.join('cache',filename)
 
         if (!fs.existsSync(filepath)) {
             console.log("🌐 Fetch Data SIS")
@@ -301,10 +301,9 @@ router.get('/json', async (req,res)=>{
             res.json(Data)
             console.log("✅ Rendered Schedule")
             console.log('------------Rendered Schedule--------------')
-
                //save cache 💾
         const filename = `cache_${UserScheduleConfig.username}_${UserScheduleConfig.semester}_${UserScheduleConfig.year}_schedule.json`
-        const filepath = path.join(process.env.project_path,'/cache',filename)
+        const filepath = path.join('cache',filename)
         fs.writeFile(filepath, JSON.stringify(Data), (err) => {
             if (err) {
               console.error('Error creating the file:', err);

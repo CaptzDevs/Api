@@ -119,7 +119,7 @@ async function getInstagramInfo(url) {
     
     
 
-
+    let profileInfo = {}
 
     const profileImage = await page.waitForSelector('meta[property="og:image"], meta[property="image"]')
     .then(elem => page.evaluate(el => el.content, elem))
@@ -180,7 +180,7 @@ router.get('/ig', async (req,res)=>{
  * `INSTAGRAM_USER=myuser INSTAGRAM_PWD=mypassword node instagram.js`
  *
  */
-router.get("igLogin",async (req,res)=>{
+router.get("/igLogin",async (req,res)=>{
   const screenshot = 'instagram.png';
 (async () => {
   const browser = await puppeteer.launch({
@@ -196,13 +196,13 @@ router.get("igLogin",async (req,res)=>{
   // email
   await page.waitForSelector("[name='username']")
   // await page.click("[name='username']");
-  await page.type("[name='username']", '')
+  await page.type("[name='username']", 'while_sky')
 
   // password
   await page.keyboard.down('Tab')
   // uncomment the following if you want the passwor dto be visible
   // page.$eval("._2hvTZ.pexuQ.zyHYP[type='password']", (el) => el.setAttribute("type", "text"));
-  await page.keyboard.type("")
+  await page.keyboard.type("onsky075")
 
   // the selector of the "Login" button
   /*  await page.click("._0mzm-.sqdOP.L3NKy>.Igw0E.IwRSH.eGOV_._4EzTm"); */
